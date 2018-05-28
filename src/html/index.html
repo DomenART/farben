@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ABC Farben</title>
+    <link href="main.css" rel="stylesheet">
+</head>
+<body>
+    <main class="autorization">
+        <form class="autorization-form">
+            <div class="autorization-form__main">
+                <img class="autorization-form__logo" src="../img/logo-abc.jpg" alt="">
+                <div class="autorization-form__title">Электронная Академия ABC Farben</div>
+                <div class="autorization-form__row">
+                    <label class="autorization-form__label" for="email">E-mail</label>
+                    <input class="autorization-form__email uk-input" name="email" id="email" type="email" placeholder="E-mail" required> 
+                </div>
+                <div class="autorization-form__row">
+                    <label  class="autorization-form__label" for="email">Пароль</label>
+                    <div class="autorization-form__password-container">
+                        <input class="autorization-form__password uk-input" name="password" id="password" type="password" placeholder="Пароль" required> 
+                        <button class="autorization-form__password-toggler" type="button"></button>
+                    </div>
+                </div>
+                <button class="autorization-form__submit" type="submit">Войти в систему</button>
+            </div>
+            <div class="autorization-form__additional">
+                <div>
+                    <input class="autorization-form__checkbox" name="remember-me" id="remember-me" type="checkbox" checked>
+                    <label class="autorization-form__remember" for="remember-me">
+                        <span class="autorization-form__checkbox-custom"></span>
+                        Запомнить меня
+                    </label>
+                </div>
+                <a class="autorization-form__forgot" href="#">Забыли пароль?</a>
+            </div>
+        </form>
+    </main>
+    <script src="bundle.js"></script>
+</body>
+</html>

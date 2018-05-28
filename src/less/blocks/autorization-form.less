@@ -1,0 +1,138 @@
+.autorization-form__row {
+    margin-bottom: 25px;
+}
+
+.autorization-form__main {
+    max-width: 540px;
+    box-sizing: border-box;
+    padding: 33px 110px 48px;
+    background-color: #27272f;
+}
+
+.autorization-form__logo {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto 25px;
+}
+
+.autorization-form__title {
+    margin-bottom: 44px;
+    padding-bottom: 8px;
+    border-bottom: 8px solid #4e4e57;
+    color: #a1a9b6;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 0.72px;
+}
+
+.autorization-form__label {
+    display: none;
+    color: #787e88;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+// .autorization-form__email {
+//     background-image: url('../../img/success-icon.svg');
+//     background-position: 98% 50%;
+//     background-size: auto;
+//     background-repeat: no-repeat;
+// }
+
+.autorization-form__submit {
+    width: 100%;
+    margin-top: 50px;
+    padding: 20px;
+    border: 0;
+    border-radius: 3px;
+    background-color: #fdd95e;
+    font-size: 16px;
+    color: #27272f;
+    letter-spacing: 0.16px;
+    cursor: pointer;
+    &:hover {
+        background-color: #ffe763;
+    }
+}
+
+.autorization-form__additional {
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 110px;
+    background-color: #33333d;
+}
+
+.autorization-form__forgot {
+    color: #9b9ba5;
+    font-size: 14px;
+    letter-spacing: 0.35px;
+    &:hover {
+        color: #cdcdda;
+        text-decoration: none;
+    }
+}
+
+.autorization-form__checkbox {
+    display: none;
+}
+
+.autorization-form__remember {
+    display: flex;
+    align-items: center;
+    color: #9b9ba5;
+    font-size: 14px;
+    letter-spacing: 0.35px;
+    cursor: pointer;
+    &:hover {
+        color: #cdcdda;
+    }
+}
+
+.autorization-form__checkbox-custom {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    border: 1px solid #4e4e57;
+    background-color: #52525b;
+    position: relative;
+    &::before {
+        display: none;
+        content: '';
+        width: 18px;
+        height: 16px;
+        position: absolute;
+        top: -3px;
+        left: 0;
+        background: url('../../img/check-icon.svg') 50% 50% no-repeat;
+        background-size: auto;
+    }
+}
+
+.autorization-form__checkbox:checked + .autorization-form__remember .autorization-form__checkbox-custom::before {
+    display: block;
+}
+
+.autorization-form__password {
+    letter-spacing: 5px;
+}
+
+.autorization-form__password-container {
+    position: relative;
+}
+
+.autorization-form__password-toggler {
+    display: none;
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    z-index: 1;
+    background: #27272f url('../../img/hidden-password-icon.svg') 50% 50% no-repeat;
+    background-size: auto;
+    border: 0;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
