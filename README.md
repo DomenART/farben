@@ -1,3 +1,1 @@
-# Woxam
-# waxom
-# farben
+Форма регистрации и страница ABC Farben
