@@ -1,3 +1,25 @@
+.autorization-form {
+    input[type='text'],
+    input[type='password'],
+    input[type='email'] {
+        &:invalid {
+            box-shadow: none;
+        }
+    }
+}
+
+.autorization-form_validated {
+    input[type='text'],
+    input[type='password'],
+    input[type='email'] {
+        &:invalid {
+            box-shadow: none;
+            color: #fe5d65;
+            border-bottom-color: #fe5d65;
+        }
+    }
+}
+
 .autorization-form__row {
     margin-bottom: 25px;
 }
