@@ -1,4 +1,5 @@
 @global-font-family: 'Roboto', sans-serif;
+@form-danger-border: 0;
 
 .uk-input::placeholder {
     color: #ffffff;
@@ -16,6 +17,11 @@
     font-size: 14px;
     font-weight: 300;
     letter-spacing: 0.35px;
+    &:required:invalid {
+        box-shadow: none;
+        color: #fe5d65;
+        border-bottom-color: #fe5d65;
+    }
 }
 
 .hook-form-focus() {
@@ -23,11 +29,9 @@
     border: 0;
     border-bottom: 1px solid #7d7d8c;
     color: #ffffff;
-}
-
-.hook-form-danger() {
-    color: #fe5d65;
-    border: 0;
-    border-bottom-color: #fe5d65;
-    outline: 0;
+    &:required:invalid {
+        box-shadow: none;
+        color: #fe5d65;
+        border-bottom-color: #fe5d65;
+    }
 }

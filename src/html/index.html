@@ -16,15 +16,16 @@
                 <div class="autorization-form__row">
                     <label class="autorization-form__label js-email-label hidden" for="email">E-mail</label>
                     <div class="autorization-form__email-container">
-                        <input class="autorization-form__email uk-input js-email-input" name="email" id="email" type="email" placeholder="E-mail" required> 
-                        <button class="autorization-form__email-tip hidden" type="button"></button>
+                        <input class="autorization-form__email uk-input js-email-input" name="email" id="email" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="E-mail" required> 
+                        <button class="autorization-form__email-danger hidden" type="button"></button>
+                        <div class="autorization-form__email-tip hidden">Поле e-mail обязательно должно содержать символ @</div>
                     </div>
                 </div>
                 <div class="autorization-form__row">
                     <label class="autorization-form__label js-password-label hidden" for="email">Пароль</label>
                     <div class="autorization-form__password-container">
                         <input class="autorization-form__password uk-input js-password-input" name="password" id="password" type="password" placeholder="Пароль" required> 
-                        <button class="autorization-form__password-toggler autorization-form__password-toggler_isHidden js-password-toggler hidden" type="button"></button>
+                        <button class="autorization-form__password-toggler js-password-toggler hidden" type="button"></button>
                     </div>
                 </div>
                 <button class="autorization-form__submit" type="submit">Войти в систему</button>

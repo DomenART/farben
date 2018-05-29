@@ -127,18 +127,46 @@
     position: relative;
 }
 
-.autorization-form__email-tip {
+.autorization-form__email-danger {
     width: 26px;
     height: 26px;
     position: absolute;
     top: 50%;
-    left: 90%;
+    left: 91%;
     z-index: 1;
-    background: #27272f url('../../img/hidden-password-icon.svg') 50% 50% no-repeat;
+    background: #27272f url('../../img/error-icon.svg') 50% 50% no-repeat;
     background-size: auto;
     border: 0;
     transform: translateY(-50%);
     cursor: pointer;
+}
+
+.autorization-form__email-tip {
+    width: 254px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: ~"calc(100% + 5px)";
+    padding: 10px;
+    background-color: #ffc7c9;
+    border: 1px solid #fe5d65;
+    color: #ff0000;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.2;
+    &::before {
+        content: '';
+        width: 9px;
+        height: 9px;
+        background-color: #ffc7c9;
+        border-top: 1px solid #fe5d65;
+        border-right: 1px solid #fe5d65;
+        position: absolute;
+        top: 12px;
+        left: -6px;
+        z-index: 1;
+        transform: rotate(-135deg);
+    }
 }
 
 .autorization-form__password-toggler {
@@ -152,10 +180,8 @@
     border: 0;
     transform: translateY(-50%);
     cursor: pointer;
-    &_isHidden {
-        background: #27272f url('../../img/hidden-password-icon.svg') 50% 50% no-repeat;
-    }
-    &_isShown {
+    background: #27272f url('../../img/hidden-password-icon.svg') 50% 50% no-repeat;
+    &_shown {
         background: #27272f url('../../img/shown-password-icon.svg') 50% 50% no-repeat;
     }
 }
