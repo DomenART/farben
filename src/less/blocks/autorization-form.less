@@ -1,4 +1,5 @@
 .autorization-form {
+    position: relative;
     input[type='text'],
     input[type='password'],
     input[type='email'] {
@@ -6,16 +7,27 @@
             box-shadow: none;
         }
     }
-}
-
-.autorization-form_validated {
-    input[type='text'],
-    input[type='password'],
-    input[type='email'] {
-        &:invalid {
-            box-shadow: none;
-            color: #fe5d65;
-            border-bottom-color: #fe5d65;
+    &_validated {
+        input[type='text'],
+        input[type='password'],
+        input[type='email'] {
+            &:invalid {
+                box-shadow: none;
+                color: #fe5d65;
+                border-bottom-color: #fe5d65;
+            }
+        }
+    }
+    &_loaded {
+        &::before {
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 3;
+            background-color: rgba(0,0,0,0.5);
         }
     }
 }
@@ -25,6 +37,7 @@
 }
 
 .autorization-form__main {
+    width: 540px;
     max-width: 540px;
     box-sizing: border-box;
     padding: 33px 110px 48px;
@@ -138,7 +151,10 @@
 }
 
 .autorization-form__password {
-    letter-spacing: 5px;
+    &[type="password"] {
+        font-size: 25px;
+        letter-spacing: 5px;
+    }
 }
 
 .autorization-form__email-container {
@@ -153,14 +169,29 @@
     width: 26px;
     height: 26px;
     position: absolute;
-    top: 50%;
-    left: 91%;
+    bottom: 5px;
+    right: 0;
     z-index: 1;
     background: #27272f url('../../img/error-icon.svg') 50% 50% no-repeat;
     background-size: auto;
     border: 0;
-    transform: translateY(-50%);
     cursor: pointer;
+    &_success {
+        animation: status-success 0.5s;
+        animation-fill-mode: both;
+        background: #27272f url('../../img/success-icon.svg') 50% 50% no-repeat;
+
+    }
+}
+
+@keyframes status-success {
+    0% {
+        transform: scale(0);
+        transform-origin: center;
+    }
+    100% {
+        transform: scale(1)
+    }
 }
 
 .autorization-form__email-tip {

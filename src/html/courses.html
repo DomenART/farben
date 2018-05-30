@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ABC Farben</title>
+    <link href="main.css" rel="stylesheet">
+</head>
+<body>
+    <main class="courses">
+        <div class="uk-container">
+            <div class="courses__header">
+                <svg class="courses__settings">
+                    <use xlink:href="img/sprite.svg#settings" />
+                </svg>
+                <img class="courses__avatar" src="../img/avatar.png" alt="">
+                <svg class="courses__notifications">
+                    <use xlink:href="img/sprite.svg#bell" />
+                </svg>
+            </div>
+            <div class="courses__greetings">Добрый день, UserName!</div>
+            <div class="courses__choice">Выберите учебную программу:</div>
+            <div class="uk-grid uk-child-width-1-3">
+                <div>
+                    <article class="course-item">
+                        <div class="course-item__main">
+                            <div class="course-item__main-top">
+                                <img class="course-item__pic" src="../img/course-pic.png" alt="">
+                                <h3 class="course-item__title">
+                                    Название программы, курса
+                                </h3>
+                                <div class="course-item__addition">
+                                    дополнение, уточнение
+                                </div>  
+                            </div>
+                            <div>
+                                <a class="course-item__link course-item__link_continue" href="#">Продолжить программу</a>
+                            </div>
+                        </div>
+                        <div class="course-item__bottom">
+                            <div class="course-item__status">
+                                <svg class="course-item__info">
+                                    <use xlink:href="img/sprite.svg#info" />
+                                </svg>
+                                Программа началась:
+                            </div>
+                            <div class="course-item__date">19 мая</div>
+                        </div>
+                    </article>
+                </div>
+                <div>
+                    <article class="course-item">
+                        <div class="course-item__main">
+                            <div class="course-item__main-top">
+                                <img class="course-item__pic" src="../img/course-pic.png" alt="">
+                                <h3 class="course-item__title">
+                                    Название программы, курса, при увеличении длины названия увеличивается высота блока
+                                </h3>
+                                <div class="course-item__addition">
+                                    дополнение, уточнение
+                                </div>  
+                            </div>
+                            <div>
+                                <a class="course-item__link course-item__link_start" href="#">Начать программу</a>
+                            </div>
+                        </div>
+                        <div class="course-item__bottom">
+                            <div class="course-item__status">
+                                <svg class="course-item__info">
+                                    <use xlink:href="img/sprite.svg#info" />
+                                </svg>
+                                Программа начнется:
+                            </div>
+                            <div class="course-item__date">21 ноября</div>
+                        </div>
+                    </article>
+                </div>
+                <div>
+                    <article class="course-item">
+                        <div class="course-item__main">
+                            <div class="course-item__main-top">
+                                <img class="course-item__pic" src="../img/course-pic.png" alt="">
+                                <h3 class="course-item__title">
+                                    Название программы; КАПС указывается<br>
+                                    не в стилях, а в тексте
+                                </h3>
+                                <div class="course-item__addition">
+                                    дополнение, уточнение
+                                </div>  
+                            </div>
+                            <div>
+                                <div class="course-item__link course-item__link_ended" href="#">Программа завершена</div>
+                            </div>
+                        </div>
+                        <div class="course-item__bottom">
+                            <div class="course-item__status">
+                                <svg class="course-item__info">
+                                    <use xlink:href="img/sprite.svg#info" />
+                                </svg>
+                                Программа завершена:
+                            </div>
+                            <div class="course-item__date">01 апреля</div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

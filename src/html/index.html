@@ -16,15 +16,14 @@
                 <div class="autorization-form__row">
                     <label class="autorization-form__label js-email-label hidden" for="email">E-mail</label>
                     <div class="autorization-form__email-container">
-                        <input class="autorization-form__email uk-input js-email-input" name="email" id="email" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="E-mail" required> 
-                        <button class="autorization-form__email-danger hidden" type="button"></button>
-                        <div class="autorization-form__email-tip hidden">Поле e-mail обязательно должно содержать символ @</div>
+                        <input class="autorization-form__email uk-input js-email-input" name="email" id="email" type="email" title="Пожалуйста, введите свой e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="E-mail" required> 
+                        <button class="autorization-form__email-danger js-email-status hidden" type="button" uk-tooltip="title: Ошибка!; pos: right; delay: 400; cls: uk-active autorization-form__email-tip"></button>
                     </div>
                 </div>
                 <div class="autorization-form__row">
                     <label class="autorization-form__label js-password-label hidden" for="email">Пароль</label>
                     <div class="autorization-form__password-container">
-                        <input class="autorization-form__password uk-input js-password-input" name="password" id="password" type="password" placeholder="Пароль" required> 
+                        <input class="autorization-form__password uk-input js-password-input" name="password" id="password" type="password" placeholder="Пароль" pattern="[a-zA-Z0-9]{6,}" title="Пожалуйста, введите свой пароль" required> 
                         <button class="autorization-form__password-toggler js-password-toggler hidden" type="button"></button>
                     </div>
                 </div>
@@ -41,6 +40,9 @@
                 <a class="autorization-form__forgot" href="#">Забыли пароль?</a>
             </div>
         </form>
+        <div class="autorization__preloader js-autorization-preloader" hidden>
+            <img class="autorization__preloader-logo" src="../img/logo-abc.png" alt="">
+        </div>
     </main>
     <script src="bundle.js"></script>
 </body>
