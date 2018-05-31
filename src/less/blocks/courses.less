@@ -1,35 +1,80 @@
 .courses {
     padding-top: 50px;
-    padding-bottom: 15%;
+    padding-bottom: 10%;
 }
 
 .courses__header {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 23px;
+    margin-bottom: 10px;
 }
 
 .courses__settings {
-    width: 26px;
-    height: 26px;
+    background: #fff;
+    border: 0;
+    cursor: pointer;
+    &:hover {
+        .courses__settings-icon {
+            fill: #969da9;
+            transition: fill 0.5s;
+        }
+    }
+}
+
+.courses__settings-icon {
+    width: 23px;
+    height: 27px;
     fill: #cacaca;
+    transition: fill 0.5s;
 }
 
 .courses__avatar {
     width: 128px;
     height: 128px;
-    margin: 0 128px;
+    margin: 0 55px;
+    @media (max-width: @breakpoint-medium) {
+        margin: 0 25px;
+    }
 }
 
 .courses__notifications {
+    background: #fff;
+    border: 0;
+    position: relative;
+    cursor: pointer;
+    &:hover {
+        .courses__notifications-icon {
+            fill: #969da9;
+            transition: fill 0.25s;
+        }
+    }
+}
+
+.courses__notifications-icon {
     width: 26px;
     height: 26px;
     fill: #cacaca;
+    transition: fill 0.25s;
+}
+
+.courses__notifications-counter {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #4fc881;
+    position: absolute;
+    top: -13px;
+    right: -5px;
+    z-index: 2;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 25px;
 }
 
 .courses__greetings {
-    margin-bottom: 83px;
+    margin-bottom: 68px;
     text-align: center;
     color: #27272f;
     font-size: 32px;
@@ -38,10 +83,44 @@
 }
 
 .courses__choice {
-    margin-bottom: 25px;
+    margin-bottom: 22px;
     text-align: center;
     color: #333333;
     font-size: 24px;
     font-weight: 300;
-    letter-spacing: 0.6px;
+    letter-spacing: 0.8px;
+}
+
+.courses__notifications-pool {
+    width: 316px;
+    padding: 0;
+    border: 1px solid #ebebeb;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.07);
+    &::before {
+        content: '';
+        width: 9px;
+        height: 9px;
+        background-color: #fff;
+        border-top: 1px solid #ebebeb;
+        border-right: 1px solid #ebebeb;
+        position: absolute;
+        top: 12px;
+        left: -6px;
+        z-index: 1;
+        transform: rotate(-135deg);
+        @media (max-width: @breakpoint-medium) {
+            display: none;
+        }
+    }
+}
+
+.courses__notifications-container {
+    width: 100%;
+    max-height: 300px;
+    overflow: hidden;
+}
+
+.courses__notifications-inner {
+    max-height: 305px;
+    overflow-y: scroll;
 }

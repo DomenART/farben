@@ -8,24 +8,20 @@
     <link href="main.css" rel="stylesheet">
 </head>
 <body>
-    <main class="autorization">
+    <main class="autorization page">
         <form class="autorization-form">
             <div class="autorization-form__main">
                 <img class="autorization-form__logo" src="../img/logo-abc.png" alt="">
-                <div class="autorization-form__title">Электронная Академия ABC Farben</div>
-                <div class="autorization-form__row">
-                    <label class="autorization-form__label js-email-label hidden" for="email">E-mail</label>
-                    <div class="autorization-form__email-container">
-                        <input class="autorization-form__email uk-input js-email-input" name="email" id="email" type="email" title="Пожалуйста, введите свой e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="E-mail" required> 
-                        <button class="autorization-form__email-danger js-email-status hidden" type="button" uk-tooltip="title: Ошибка!; pos: right; delay: 400; cls: uk-active autorization-form__email-tip"></button>
-                    </div>
+                <div class="autorization-form__title">Электронная Академия <span>ABC Farben</span></div>
+                <label class="autorization-form__label js-email-label hidden" for="email">E-mail</label>
+                <div class="autorization-form__email-container">
+                    <input class="autorization-form__email uk-input js-email-input" name="email" id="email" type="email" title="Пожалуйста, введите свой e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="E-mail" required> 
+                    <button class="autorization-form__email-danger js-email-status hidden" type="button" uk-tooltip="title: Ошибка!; pos: right; delay: 400; cls: uk-active autorization-form__email-tip"></button>
                 </div>
-                <div class="autorization-form__row">
-                    <label class="autorization-form__label js-password-label hidden" for="email">Пароль</label>
-                    <div class="autorization-form__password-container">
-                        <input class="autorization-form__password uk-input js-password-input" name="password" id="password" type="password" placeholder="Пароль" pattern="[a-zA-Z0-9]{6,}" title="Пожалуйста, введите свой пароль" required> 
-                        <button class="autorization-form__password-toggler js-password-toggler hidden" type="button"></button>
-                    </div>
+                <label class="autorization-form__label js-password-label hidden" for="email">Пароль</label>
+                <div class="autorization-form__password-container">
+                    <input class="autorization-form__password uk-input js-password-input" name="password" id="password" type="password" placeholder="Пароль" pattern="[a-zA-Z0-9]{6,}" title="Пожалуйста, введите свой пароль" required> 
+                    <button class="autorization-form__password-toggler js-password-toggler hidden" type="button"></button>
                 </div>
                 <button class="autorization-form__submit" type="submit">Войти в систему</button>
             </div>

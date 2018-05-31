@@ -1,4 +1,6 @@
 .autorization-form {
+    width: 544px;
+    box-sizing: border-box;
     position: relative;
     input[type='text'],
     input[type='password'],
@@ -33,14 +35,13 @@
 }
 
 .autorization-form__row {
-    margin-bottom: 25px;
+    margin-bottom: 2px;
 }
 
 .autorization-form__main {
-    width: 540px;
-    max-width: 540px;
-    box-sizing: border-box;
-    padding: 33px 110px 48px;
+    padding: 33px 20% 45px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     background-color: #27272f;
 }
 
@@ -48,17 +49,20 @@
     display: block;
     width: 40px;
     height: 40px;
-    margin: 0 auto 25px;
+    margin: 0 auto 20px;
 }
 
 .autorization-form__title {
-    margin-bottom: 44px;
-    padding-bottom: 8px;
+    margin-bottom: 25px;
+    padding-bottom: 5px;
     border-bottom: 8px solid #4e4e57;
     color: #a1a9b6;
     font-size: 18px;
     font-weight: 300;
     letter-spacing: 0.72px;
+    span {
+        letter-spacing: 0.9px;
+    }
 }
 
 .autorization-form__label {
@@ -68,40 +72,40 @@
     font-weight: 400;
 }
 
-// .autorization-form__email {
-//     background-image: url('../../img/success-icon.svg');
-//     background-position: 98% 50%;
-//     background-size: auto;
-//     background-repeat: no-repeat;
-// }
-
 .autorization-form__submit {
     width: 100%;
     margin-top: 50px;
-    padding: 20px;
+    padding: 18px;
     border: 0;
     border-radius: 3px;
     background-color: #fdd95e;
     font-size: 16px;
+    font-weight: 600;
     color: #27272f;
-    letter-spacing: 0.16px;
+    letter-spacing: -0.5px;
     cursor: pointer;
+    transition: background-color 0.25s;
     &:hover {
         background-color: #ffe763;
+        transition: background-color 0.25s;
     }
 }
 
 .autorization-form__additional {
     display: flex;
-    justify-content: space-between;
-    padding: 18px 110px;
+    justify-content: center;
+    padding: 15px 110px;
     background-color: #33333d;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .autorization-form__forgot {
+    margin-left: 20%;
     color: #9b9ba5;
     font-size: 14px;
     letter-spacing: 0.35px;
+    white-space: nowrap;
     &:hover {
         color: #cdcdda;
         text-decoration: none;
@@ -120,6 +124,7 @@
     letter-spacing: 0.35px;
     cursor: pointer;
     user-select: none;
+    white-space: nowrap;
     &:hover {
         color: #cdcdda;
     }
@@ -129,7 +134,7 @@
     display: inline-block;
     width: 16px;
     height: 16px;
-    margin-right: 10px;
+    margin-right: 7px;
     border: 1px solid #4e4e57;
     background-color: #52525b;
     position: relative;

@@ -8,20 +8,80 @@
     <link href="main.css" rel="stylesheet">
 </head>
 <body>
-    <main class="courses">
+    <main class="courses page">
         <div class="uk-container">
             <div class="courses__header">
-                <svg class="courses__settings">
-                    <use xlink:href="img/sprite.svg#settings" />
-                </svg>
+                <button class="courses__settings" type="button">
+                    <svg class="courses__settings-icon">
+                        <use xlink:href="img/sprite.svg#settings" />
+                    </svg>
+                </button>
                 <img class="courses__avatar" src="../img/avatar.png" alt="">
-                <svg class="courses__notifications">
-                    <use xlink:href="img/sprite.svg#bell" />
-                </svg>
+                <button class="courses__notifications" type="button">
+                    <svg class="courses__notifications-icon">
+                        <use xlink:href="img/sprite.svg#bell" />
+                    </svg>
+                    <div class="courses__notifications-counter">348</div>
+                </button>
+                <div class="courses__notifications-pool" uk-dropdown="mode: click; pos: right-top;">
+                    <div class="courses__notifications-container">
+                    <div class="courses__notifications-inner">
+                        <div class="notification-item">
+                            <div class="notification-item__title">
+                                Программа, к которой относится уведомление
+                            </div>
+                            <div class="notification-item__info">
+                                <a class="notification-item__link" href="#">
+                                    <span class="notification-item__calendar">
+                                        <svg class="notification-item__calendar-icon">
+                                            <use xlink:href="img/sprite.svg#calendar" />
+                                        </svg>
+                                    </span>
+                                    <span class="notification-item__text">
+                                        Дополнительное образование (психология бизнеса), тренинги, полиграф, консалтинг, исследования
+                                    </span>
+                                </a>
+                                <button class="notification-item__remove-btn" type="button"></button>
+                            </div>
+                        </div>
+                        <div class="notification-item">
+                            <div class="notification-item__title">
+                                Программа, к которой относится уведомление
+                            </div>
+                            <div class="notification-item__info">
+                                <a class="notification-item__link" href="#">
+                                    <span class="notification-item__calendar">
+                                        <svg class="notification-item__folder-icon">
+                                            <use xlink:href="img/sprite.svg#folder" />
+                                        </svg>
+                                    </span>
+                                    <span class="notification-item__text">
+                                        Открыт доступ к программе курса 
+                                    </span>
+                                </a>
+                                <button class="notification-item__remove-btn" type="button"></button>
+                            </div>
+                            <div class="notification-item__info">
+                                <a class="notification-item__link" href="#">
+                                    <span class="notification-item__calendar">
+                                        <svg class="notification-item__folder-icon">
+                                            <use xlink:href="img/sprite.svg#folder" />
+                                        </svg>
+                                    </span>
+                                    <span class="notification-item__text">
+                                        Открыт доступ к программе курса 
+                                    </span>
+                                </a>
+                                <button class="notification-item__remove-btn" type="button"></button>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
             </div>
             <div class="courses__greetings">Добрый день, UserName!</div>
             <div class="courses__choice">Выберите учебную программу:</div>
-            <div class="uk-grid uk-child-width-1-3">
+            <div uk-grid class="uk-grid uk-child-width-1-3@m">
                 <div>
                     <article class="course-item">
                         <div class="course-item__main">
@@ -34,16 +94,14 @@
                                     дополнение, уточнение
                                 </div>  
                             </div>
-                            <div>
-                                <a class="course-item__link course-item__link_continue" href="#">Продолжить программу</a>
-                            </div>
+                            <a class="course-item__link course-item__link_continue" href="#">Продолжить программу</a>
                         </div>
                         <div class="course-item__bottom">
                             <div class="course-item__status">
-                                <svg class="course-item__info">
+                                <svg class="course-item__info-icon">
                                     <use xlink:href="img/sprite.svg#info" />
                                 </svg>
-                                Программа началась:
+                                <span class="course-item__info-text">Программа началась:</span>
                             </div>
                             <div class="course-item__date">19 мая</div>
                         </div>
@@ -61,16 +119,14 @@
                                     дополнение, уточнение
                                 </div>  
                             </div>
-                            <div>
-                                <a class="course-item__link course-item__link_start" href="#">Начать программу</a>
-                            </div>
+                            <a class="course-item__link course-item__link_start" href="#">Начать программу</a>
                         </div>
                         <div class="course-item__bottom">
                             <div class="course-item__status">
-                                <svg class="course-item__info">
+                                <svg class="course-item__info-icon">
                                     <use xlink:href="img/sprite.svg#info" />
                                 </svg>
-                                Программа начнется:
+                                <span class="course-item__info-text">Программа начнется:</span>
                             </div>
                             <div class="course-item__date">21 ноября</div>
                         </div>
@@ -89,16 +145,14 @@
                                     дополнение, уточнение
                                 </div>  
                             </div>
-                            <div>
-                                <div class="course-item__link course-item__link_ended" href="#">Программа завершена</div>
-                            </div>
+                            <div class="course-item__link course-item__link_ended" href="#">Программа завершена</div>
                         </div>
                         <div class="course-item__bottom">
                             <div class="course-item__status">
-                                <svg class="course-item__info">
+                                <svg class="course-item__info-icon">
                                     <use xlink:href="img/sprite.svg#info" />
                                 </svg>
-                                Программа завершена:
+                                <span class="course-item__info-text">Программа завершена:</span>
                             </div>
                             <div class="course-item__date">01 апреля</div>
                         </div>
@@ -107,5 +161,6 @@
             </div>
         </div>
     </main>
+    <script src="bundle.js"></script>
 </body>
 </html>
