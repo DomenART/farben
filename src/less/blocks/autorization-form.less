@@ -239,7 +239,13 @@
     transform: translateY(-50%);
     cursor: pointer;
     background: #27272f url('../../img/hidden-password-icon.svg') 50% 50% no-repeat;
+    &:hover {
+        background: #27272f url('../../img/hidden-password-icon-hover.svg') 50% 50% no-repeat;
+    }
     &_shown {
         background: #27272f url('../../img/shown-password-icon.svg') 50% 50% no-repeat;
+        &:hover {
+            background: #27272f url('../../img/shown-password-icon-hover.svg') 50% 50% no-repeat;
+        }
     }
 }
