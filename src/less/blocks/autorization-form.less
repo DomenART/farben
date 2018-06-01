@@ -234,18 +234,40 @@
     top: 50%;
     left: 90%;
     z-index: 1;
-    background-size: auto;
     border: 0;
     transform: translateY(-50%);
+    background: transparent;
     cursor: pointer;
-    background: #27272f url('../../img/hidden-password-icon.svg') 50% 50% no-repeat;
+    .autorization-form__eye-opened {
+        display: none;
+    }
     &:hover {
-        background: #27272f url('../../img/hidden-password-icon-hover.svg') 50% 50% no-repeat;
+        .autorization-form__eye-closed {
+           fill: #7d7d8c;
+        }
+        .autorization-form__eye-opened {
+            fill: #7d7d8c;
+         }
     }
     &_shown {
-        background: #27272f url('../../img/shown-password-icon.svg') 50% 50% no-repeat;
-        &:hover {
-            background: #27272f url('../../img/shown-password-icon-hover.svg') 50% 50% no-repeat;
+        .autorization-form__eye-closed {
+            display: none;
+        }
+        .autorization-form__eye-opened {
+            display: block;
+            fill: #7d7d8c;
         }
     }
+}
+
+.autorization-form__eye-closed {
+    width: 24px;
+    height: 10px;
+    fill: #4e4e57;
+}
+
+.autorization-form__eye-opened {
+    width: 26px;
+    height: 18px;
+    fill: #4e4e57;
 }

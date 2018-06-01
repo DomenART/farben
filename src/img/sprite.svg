@@ -14,4 +14,10 @@
     <symbol id="folder" viewBox="0 0 23 22">
         <path transform="translate(-1169 -299)" d="M1189 304a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-17a2 2 0 0 1-2-2v-12c0-1.1.9-2 2-2v-2a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1l.67 2zm-17 13a1 1 0 0 0 1 1h15a1 1 0 0 0 1-1z"/>
     </symbol>
+    <symbol id="eye-closed" viewBox="0 0 26 13">
+        <path transform="translate(-1083 -549)" d="M1084 553l2-2s4.97 7 10 7c5.19 0 10-7 10-7l2 2s-5.23 7.99-12.11 7.99c-7.36 0-11.89-8-11.89-8z"/>
+    </symbol>
+    <symbol id="eye-opened" viewBox="0 0 26 18">
+        <path transform="translate(-1083 -544)" d="M1095.89 545c6.92 0 12.1 8 12.1 8s-5.22 7.99-12.1 7.99c-7.36 0-11.89-8-11.89-8s4.57-7.98 11.89-7.98zm-4.9 8a5 5 0 1 0 10-.02 5 5 0 0 0-10 .02zm5.04-2.5a2.49 2.49 0 1 1 0 4.98 2.49 2.49 0 0 1 0-4.98z"/>
+    </symbol>
 </svg>

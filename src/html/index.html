@@ -12,7 +12,9 @@
         <form class="autorization-form">
             <div class="autorization-form__main">
                 <img class="autorization-form__logo" src="../img/logo-abc.png" alt="">
-                <div class="autorization-form__title">Электронная Академия <span>ABC Farben</span></div>
+                <div class="autorization-form__title">
+                    Электронная Академия <span>ABC Farben</span>
+                </div>
                 <label class="autorization-form__label js-email-label hidden" for="email">E-mail</label>
                 <div class="autorization-form__email-container">
                     <input class="autorization-form__email uk-input js-email-input" name="email" id="email" type="email" title="Пожалуйста, введите свой e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="E-mail" required> 
@@ -21,7 +23,14 @@
                 <label class="autorization-form__label js-password-label hidden" for="email">Пароль</label>
                 <div class="autorization-form__password-container">
                     <input class="autorization-form__password uk-input js-password-input" name="password" id="password" type="password" placeholder="Пароль" pattern="[a-zA-Z0-9]{6,}" title="Пожалуйста, введите свой пароль" required> 
-                    <button class="autorization-form__password-toggler js-password-toggler hidden" type="button"></button>
+                    <button class="autorization-form__password-toggler js-password-toggler hidden" type="button">
+                        <svg class="autorization-form__eye-closed">
+                            <use xlink:href="img/sprite.svg#eye-closed"/>
+                        </svg>
+                        <svg class="autorization-form__eye-opened">
+                            <use xlink:href="img/sprite.svg#eye-opened"/> 
+                        </svg>
+                    </button>
                 </div>
                 <button class="autorization-form__submit" type="submit">Войти в систему</button>
             </div>
