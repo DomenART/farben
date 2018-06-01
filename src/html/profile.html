@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="main.css" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="main-header__leftside">
+            <img class="main-header__logo" src="../img/logo.png" alt="">
+            <div class="main-header__title">
+                Электронная Академия<br>
+                ABC Farben
+            </div>
+        </div>
+        <div class="main-header__rightside">
+            <a class="main-header__programs" href="#">
+                « Список учебных программ
+            </a>
+            <a class="main-header__help" href="#">
+                <svg class="main-header__help-icon">
+                    <use xlink:href="img/sprite.svg#help">
+                </svg>
+            </a>
+            <button class="main-header__notification-btn notification-btn" type="button">
+                <svg class="notification-btn__icon">
+                    <use xlink:href="img/sprite.svg#bell" />
+                </svg>
+                <div class="notification-btn__counter">348</div>
+            </button>
+            <a class="main-header__user" href="#">
+                UserName
+                <img class="main-header__user-avatar" src="../img/avatar.png" alt="">
+            </a>
+        </div>
+    </header>
+    <main class="profile page">
+        <div class="profile__heading">
+            <div class="profile__heading-inner">
+                <img class="profile__avatar" src="../img/avatar.png" alt="">
+                <div class="profile__name">Христофор Христорождественский</div>
+                <a class="profile__password" href="#">
+                    <svg class="profile__password-icon">
+                        <use xlink:href="img/sprite.svg#lock"/>
+                    </svg>
+                    Изменить пароль
+                </a>
+                <a class="profile__logout" href="#">
+                    <svg class="profile__logout-icon">
+                        <use xlink:href="img/sprite.svg#logout"/>
+                    </svg>
+                    Выход
+                </a>
+            </div>
+        </div>
+        <div class="profile__contacts">
+            <div class="uk-container">
+                <div class="profile__contacts-row">
+                    <img class="profile__contacts-icon" src="../img/map-pin.svg" alt="">
+                    <span class="profile__conrtacts-info">Россия, Воронеж</span>
+                </div>
+                <div class="profile__contacts-row">
+                    <img class="profile__contacts-icon" src="../img/user.svg" alt="">
+                    <span class="profile__conrtacts-info">Фамилия Имя</span>
+                </div>
+                <div class="profile__contacts-row">
+                    <img class="profile__contacts-icon" src="../img/mail.svg" alt="">
+                    <span class="profile__conrtacts-info">mail@mail.ru</span>
+                    <span class="profile__visibility-warning">(Виден только Вам)</span>
+                </div>
+                <div class="profile__contacts-row">
+                    <img class="profile__contacts-icon" src="../img/phone.svg" alt="">
+                    <span class="profile__conrtacts-info">+7 960 123-45-67</span>
+                    <span class="profile__visibility-warning">(Виден только Вам)</span>
+                </div>
+                <div class="profile__contacts-row">
+                    <img class="profile__contacts-icon" src="../img/skype.svg" alt="">
+                    <span class="profile__conrtacts-info">Skypename</span>
+                    <span class="profile__visibility-warning">(Виден только Вам)</span>
+                </div>
+            </div>
+        </div>
+        <div class="profile__company">
+            <div class="uk-container">
+
+            </div>
+        </div>
+    </main>
+    <script src="bundle.js"></script>
+</body>
+</html>

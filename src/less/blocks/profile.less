@@ -1,0 +1,108 @@
+.profile__heading {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.07);
+    border: 1px solid #ebebeb;
+    background-color: #f3f3f5;
+}
+
+.profile__heading-inner {
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+    min-height: 144px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.profile__avatar {
+    width: 127px;
+    height: 127px;
+    margin-right: 46px;
+}
+
+.profile__name {
+    margin-right: 58px;
+    color: #27272f;
+    font-size: 32px;
+    font-weight: 300;
+    letter-spacing: 0.16px;
+}
+
+.profile__password {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    padding: 12px;
+    border: 1px solid #e5eaef;
+    background-color: #ffffff;
+    color: #525263;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0.12px;
+    white-space: nowrap;
+    transition: background-color 0.25s, border 0.25s;
+    &:hover {
+        border: 1px solid #06a7e0;
+        background-color: #06a7e0;
+        color: #fff;
+        text-decoration: none;
+        transition: background-color 0.25s, border 0.25s;
+        .profile__password-icon {
+            fill: #fff;
+        }
+    }
+}
+
+.profile__password-icon {
+    width: 12px;
+    height: 16px;
+    margin-right: 6px;
+    fill: #dae2ed;
+}
+
+.profile__logout {
+    display: flex;
+    align-items: center;
+    color: #7b7b7b;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 22.32px;
+    text-decoration: underline;
+    letter-spacing: 0.59px;
+    white-space: nowrap;
+    &:hover {
+        color: #525263;
+        .profile__logout-icon {
+            fill: #c2cbdb;
+        }
+    }
+}
+
+.profile__logout-icon {
+    width: 18px;
+    height: 16px;
+    margin-right: 6px;
+    fill: @icon-fill-color;
+}
+
+.profile__contacts-icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 11px;
+}
+
+.profile__conrtacts-info {
+    margin-right: 13px;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.35px;
+}
+
+.profile__visibilty-warning {
+    color: #cacaca;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.3px;
+}
