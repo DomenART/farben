@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ABC Farben</title>
+    <link href="main.css" rel="stylesheet">
 </head>
 <body class="page">
     <header class="main-header">
@@ -32,14 +33,14 @@
             </button>
             <a class="main-header__user" href="#">
                 UserName
-                <img class="main-header__user-avatar" src="../img/avatar.png" alt="">
+                <img class="main-header__user-avatar" src="../img/avatar.svg" alt="">
             </a>
         </div>
     </header>
     <header class="program-header">
         <div class="program-header__leftside">
             <img class="program-header__pic" src="../img/course.svg" alt="">
-            <div class="program__header__title">Программа, к которой относится уведомление</div>
+            <div class="program-header__title">Программа, к которой относится уведомление</div>
             <div class="program-header__addition">дополнение, уточнение</div>
         </div>
         <div class="program-header__center">
@@ -57,18 +58,213 @@
                 <li><a href="#">Задания</a></li>
                 <li><a href="#">Участники</a></li>
                 <li>
-                    <a href="#">
-                        <svg class="program-header__facebook">
+                    <a class="program-header__fb" href="#">
+                        <svg class="program-header__fb-icon">
                             <use href="img/sprite.svg#fb"/>
                         </svg>
                     </a>
                 </li>
             </ul>
-
         </div>
     </header>
-    <aside>
-
-    </aside>
+    <div class="uk-grid uk-grid-match">
+        <div class="uk-width-1-5">
+            <aside class="main-aside">
+                <div class="main-aside__section">
+                    <div class="main-aside__structure-heading">
+                        <img class="main-aside__section-pic" src="../img/structure.svg" alt="">
+                        <span class="main-aside__section-title">Структура программы</span>
+                    </div>
+                    <ul class="main-aside__structure-list">
+                        <li>
+                            <a href="#">
+                                <svg class="main-aside__structure-icon">
+                                    <use xlink:href="img/sprite.svg#folder"/>
+                                </svg>
+                                <span class="main-aside__structure-title">I. Модель системного ...</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg class="main-aside__structure-icon">
+                                    <use xlink:href="img/sprite.svg#folder"/>
+                                </svg>
+                                <span class="main-aside__structure-title">I. Модель системного ...</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg class="main-aside__structure-icon">
+                                    <use xlink:href="img/sprite.svg#folder"/>
+                                </svg>
+                                <span class="main-aside__structure-title">I. Модель системного ...</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg class="main-aside__structure-icon">
+                                    <use xlink:href="img/sprite.svg#folder"/>
+                                </svg>
+                                <span class="main-aside__structure-title">I. Модель системного ...</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg class="main-aside__structure-icon">
+                                    <use xlink:href="img/sprite.svg#folder"/>
+                                </svg>
+                                <span class="main-aside__structure-title">I. Модель системного ...</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg class="main-aside__structure-icon">
+                                    <use xlink:href="img/sprite.svg#folder"/>
+                                </svg>
+                                <span class="main-aside__structure-title">I. Модель системного ...</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg class="main-aside__structure-icon">
+                                    <use xlink:href="img/sprite.svg#folder"/>
+                                </svg>
+                                <span class="main-aside__structure-title">I. Модель системного ...</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg class="main-aside__structure-icon">
+                                    <use xlink:href="img/sprite.svg#folder-locked"/>
+                                </svg>
+                                <span class="main-aside__structure-title">I. Модель системного ...</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg class="main-aside__structure-icon">
+                                    <use xlink:href="img/sprite.svg#folder-locked"/>
+                                </svg>
+                                <span class="main-aside__structure-title">I. Модель системного ...</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg class="main-aside__structure-icon">
+                                    <use xlink:href="img/sprite.svg#folder-locked"/>
+                                </svg>
+                                <span class="main-aside__structure-title">I. Модель системного ...</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main-aside__section">
+                    <a href="#" class="main-aside__link">
+                        <svg class="main-aside__icon-calendar">
+                            <use xlink:href="img/sprite.svg#calendar"/>
+                        </svg>
+                        <span class="main-aside__link-title">Календарь</span>
+                    </a>
+                </div>
+                <div class="main-aside__section">
+                    <a href="#" class="main-aside__link">
+                        <svg class="main-aside__link-expert">
+                            <use xlink:href="img/sprite.svg#bubbles"/>
+                        </svg>
+                        <span class="main-aside__link-title">Задать вопрос эксперту</span>
+                    </a>
+                </div>
+                <div class="main-aside__section">
+                    <a href="#" class="main-aside__link">
+                        <svg class="main-aside__link-curator">
+                            <use xlink:href="img/sprite.svg#curator"/>
+                        </svg>
+                        <span class="main-aside__link-title">Мой куратор</span>
+                    </a>
+                </div>
+            </aside>
+        </div>
+        <div class="uk-width-expand">
+            <main class="program">
+                <h1 class="program__title">Программа: <span>“Название программы, курса”</span></h1>
+                <div class="program__progress">
+                    <div class="program__progress-leftside">
+                        <svg class="program__progress-icon">
+                            <use xlink:href="img/sprite.svg#settings"/>
+                        </svg>
+                        <div class="program__progress-text">Текущая степень систематизации вашего бизнеса:</div>
+                        <div class="program__progress-value">78%</div>
+                    </div>
+                    <div class="program__progress-rightside">
+                        <button class="program__progress-btn" type="button">
+                            <svg class="program__progress-btn-icon">
+                                <use xlink:href="img/sprite.svg#refresh"/>
+                            </svg>
+                            <span class="program__progress-btn-text">
+                                Актуализировать
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="program__structure-title">
+                    Структура программы
+                </div>
+                <ul class="program__structure-list">
+                    <li>
+                        <button class="program__section-control" type="button" uk-toggle="target: #subsection-2"></button>
+                        <a class="program__section" href="#">
+                            <svg class="program__section-icon">
+                                <use xlink:href="img/sprite.svg#refresh"/>
+                            </svg>
+                            <span class="program__section-title">II. Модель системного бизнеса 2</span>
+                        </a>
+                        <ul class="program__subsection-list" id="subsection-2">
+                            <li>
+                                <a class="program__subsection" href="#">
+                                    <svg class="program__subsection-icon">
+                                        <use xlink:href="img/sprite.svg#doc-done"/>
+                                    </svg>
+                                    <span class="program__subsection-title">
+                                        Модель системного бизнеса
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="program__subsection" href="#">
+                                    <svg class="program__subsection-icon">
+                                        <use xlink:href="img/sprite.svg#doc-done"/>
+                                    </svg>
+                                    <span class="program__subsection-title">
+                                        Модель системного бизнеса
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="program__subsection" href="#">
+                                    <svg class="program__subsection-icon">
+                                        <use xlink:href="img/sprite.svg#doc-done"/>
+                                    </svg>
+                                    <span class="program__subsection-title">
+                                        Модель системного бизнеса
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="program__subsection" href="#">
+                                    <svg class="program__subsection-icon">
+                                        <use xlink:href="img/sprite.svg#doc"/>
+                                    </svg>
+                                    <span class="program__subsection-title">
+                                        Модель системного бизнеса
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </main>
+        </div>
+    </div>
+    <script src="bundle.js"></script>
 </body>
 </html>
