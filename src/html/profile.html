@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>ABC Farben</title>
     <link href="main.css" rel="stylesheet">
 </head>
-<body>
+<body class="page">
     <header class="main-header">
         <div class="main-header__leftside">
             <img class="main-header__logo" src="../img/logo.png" alt="">
@@ -29,7 +29,7 @@
                 <svg class="notification-btn__icon">
                     <use xlink:href="img/sprite.svg#bell" />
                 </svg>
-                <div class="notification-btn__counter">348</div>
+                <div class="notification-btn__counter"><span>348</span></div>
             </button>
             <a class="main-header__user" href="#">
                 UserName
@@ -40,20 +40,24 @@
     <main class="profile page">
         <div class="profile__heading">
             <div class="profile__heading-inner">
-                <img class="profile__avatar" src="../img/avatar.png" alt="">
-                <div class="profile__name">Христофор Христорождественский</div>
-                <a class="profile__password" href="#">
-                    <svg class="profile__password-icon">
-                        <use xlink:href="img/sprite.svg#lock"/>
-                    </svg>
-                    Изменить пароль
-                </a>
-                <a class="profile__logout" href="#">
-                    <svg class="profile__logout-icon">
-                        <use xlink:href="img/sprite.svg#logout"/>
-                    </svg>
-                    Выход
-                </a>
+                <div class="profile__heading-leftside">
+                    <img class="profile__avatar" src="../img/avatar.png" alt="">
+                    <div class="profile__name">Христофор Христорождественский</div>
+                </div>
+                <div class="profile__heading-rightside">
+                    <a class="profile__password" href="#">
+                        <svg class="profile__password-icon">
+                            <use xlink:href="img/sprite.svg#lock"/>
+                        </svg>
+                        Изменить пароль
+                    </a>
+                    <a class="profile__logout" href="#">
+                        <svg class="profile__logout-icon">
+                            <use xlink:href="img/sprite.svg#logout"/>
+                        </svg>
+                        Выход
+                    </a>
+                </div>
             </div>
         </div>
         <div class="profile__contacts">
@@ -85,7 +89,51 @@
         </div>
         <div class="profile__company">
             <div class="uk-container">
-
+                <div class="profile__company-row">
+                    <img class="profile__company-icon" src="../img/house.svg" alt="">
+                    <div class="profile__company-info">
+                        <div class="profile__company-field">
+                            Компания
+                        </div>
+                        <div class="profile__company-text">
+                            ABC Farben
+                        </div>
+                    </div>
+                </div>
+                <div class="profile__company-row">
+                    <img class="profile__company-icon" src="../img/position.svg" alt="">
+                    <div class="profile__company-info">
+                        <div class="profile__company-field">
+                            Должность
+                        </div>
+                        <div class="profile__company-text">
+                            Учредитель
+                        </div>
+                    </div>
+                </div>
+                <div class="profile__company-row">
+                    <img class="profile__company-icon" src="../img/field.svg" alt="">
+                    <div class="profile__company-info">
+                        <div class="profile__company-field">
+                            Сфера деятельности
+                        </div>
+                        <div class="profile__company-text">
+                            ABC Farben
+                        </div>
+                    </div>
+                </div>
+                <div class="profile__company-row">
+                    <img class="profile__company-icon" src="../img/about.svg" alt="">
+                    <div class="profile__company-info">
+                        <div class="profile__company-field">
+                            О компании
+                        </div>
+                        <div class="profile__company-text">
+                            Производство декоративных лакокрасочных материалов
+                            и индустриальных полимерных ЛКМ 
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>

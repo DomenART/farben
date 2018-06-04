@@ -7,10 +7,16 @@
 .profile__heading-inner {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     max-width: 1000px;
     min-height: 144px;
     margin: 0 auto;
     padding: 0 20px;
+}
+
+.profile__heading-leftside { 
+    display: flex;
+    align-items: center;
 }
 
 .profile__avatar {
@@ -20,11 +26,15 @@
 }
 
 .profile__name {
-    margin-right: 58px;
     color: #27272f;
     font-size: 32px;
     font-weight: 300;
-    letter-spacing: 0.16px;
+    letter-spacing: 0.4px;
+}
+
+.profile__heading-rightside { 
+    display: flex;
+    align-items: center;
 }
 
 .profile__password {
@@ -33,6 +43,7 @@
     margin-right: 30px;
     padding: 12px;
     border: 1px solid #e5eaef;
+    border-radius: 5px;
     background-color: #ffffff;
     color: #525263;
     font-size: 12px;
@@ -85,13 +96,22 @@
     fill: @icon-fill-color;
 }
 
+.profile__contacts {
+    padding-top: 26px;
+    margin-bottom: 58px;
+}
+
+.profile__contacts-row {
+    margin-bottom: 20px;
+}
+
 .profile__contacts-icon {
     width: 18px;
     height: 18px;
     margin-right: 11px;
 }
 
-.profile__conrtacts-info {
+.profile__contacts-info {
     margin-right: 13px;
     color: #000000;
     font-size: 14px;
@@ -105,4 +125,35 @@
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.3px;
+}
+
+.profile__company {
+    padding: 28px 0;
+    background-color: #fbfbfd;
+}
+
+.profile__company-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 38px;
+}
+
+.profile__company-icon {
+    width: 52px;
+    height: 52px;
+    margin-right: 36px;
+}
+
+.profile__company-field {
+    margin-bottom: 4px;
+    color: #cacaca;
+    font-size: 12px;
+    line-height: 1;
+    letter-spacing: 0.12px;
+}
+
+.profile__company-text {
+    color: #444444;
+    font-weight: 700;
+    letter-spacing: 0.16px;
 }
