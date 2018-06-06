@@ -1,7 +1,6 @@
 .main-aside {
-    padding-top: 26px;
-    padding-left: 58px;
-    padding-right: 58px;
+    height: 100%;
+    min-height: ~"calc(100vh - 120px)";
     background-color: #374353;
 }
 
@@ -9,6 +8,11 @@
     display: flex;
     align-items: center;
     margin-bottom: 16px;
+}
+
+.main-aside__section {
+    border-bottom: 1px solid #e7e7e7;
+    padding: 26px 58px;
 }
 
 .main-aside__section-pic {
@@ -29,26 +33,187 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    a {
-        &:hover {
-            text-decoration: none;
-            color: currentColor;
+    li {
+        margin-bottom: 15px;
+        position: relative;
+    }
+}
+
+.main-aside__structure {
+    display: flex;
+    align-items: center;
+    position: relative;
+    &_isAvailable {
+        .main-aside__structure-title {
+            color: #c4cede;
         }
+        &:hover {
+            .main-aside__structure-icon {
+                color: lighten(#d8dfeb, 20%);
+            }
+            .main-aside__structure-title {
+                color: lighten(#c4cede, 20%);
+            }
+        }
+    }
+    &_isLocked {
+        .main-aside__structure-title {
+            color: #969ba1;
+        }
+    }
+    &:hover {
+        text-decoration: none;
+        color: currentColor;
     }
 }
 
 .main-aside__structure-icon {
-    width: 14px;
-    height: 12px;
-    margin-right: 21px;
-    stroke: #d8dfeb;
-    fill :transparent;
+    width: 15px;
+    height: 20px;
+    margin-right: 17px;
+    color: #d8dfeb;
+    fill: transparent;
+}
+
+.main-aside__structure-icon-done {
+    width: 15px;
+    height: 20px;
+    margin-right: 17px;
+    color: #cacaca;
+}
+
+.main-aside__structure-icon-locked {
+    width: 17px;
+    height: 14px;
+    margin-right: 18px;
+    fill: #969ba1;
 }
 
 .main-aside__structure-title {
-    color: #ebf3ff;
+    display: inline-block;
+    width: 140px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
     font-size: 12px;
     font-weight: 300;
     line-height: 1.16;
     letter-spacing: 0.3px;
+}
+
+.main-aside__structure-dropdown {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    &::before {
+        content: '';
+        width: 4px;
+        height: 4px;
+        border-left: 1px solid #ebf3ff;
+        border-top: 1px solid #ebf3ff;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        z-index: 2;
+        transform: translate(-50%, -50%) rotate(-135deg);
+    }   
+}
+
+.main-aside__substructure-list {
+    margin: 15px 0 25px;
+    padding-left: 35px;
+    list-style: none;
+    li {
+        margin-bottom: 15px;
+    }
+}
+
+.main-aside__substructure {
+    display: flex;
+    align-items: top;
+    &:hover {
+        text-decoration: none;
+        .main-aside__substructure-icon {
+            color: lighten(#cacaca, 20%);
+        }
+        .main-aside__substructure-icon-done {
+            color: lighten(#cacaca, 20%);
+        }
+        .main-aside__substructure-title {
+            color: lighten(#a9afb7, 20%);
+        }
+    }
+}
+
+.main-aside__substructure-icon {
+    width: 17px;
+    height: 17px;
+    margin-right: 10px;
+    color: #cacaca;
+}
+
+.main-aside__substructure-icon-done {
+    width: 17px;
+    height: 17px;
+    margin-right: 10px;
+    color: #cacaca;
+}
+
+.main-aside__substructure-title {
+    color: #a9afb7;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.16;
+    letter-spacing: 0.12px;
+}
+
+.main-aside__link {
+    display: flex;
+    align-items: center;
+    &:hover {
+        text-decoration: none;
+        .main-aside__link-title {
+            color: lighten(#c4cede, 10%);
+        }
+        .main-aside__icon {
+            fill: lighten(#bec4cf, 10%);
+        }
+    }
+}
+
+.main-aside__icon {
+    fill: #bec4cf;
+}
+
+.main-aside__icon_calendar {
+    width: 21px;
+    height: 24px;
+    margin-right: 19px;
+   
+}
+
+.main-aside__icon_expert {
+    width: 25px;
+    height: 24px;
+    margin-right: 17px;
+}
+
+.main-aside__icon_curator {
+    width: 20px;
+    height: 24px;
+    margin-right: 19px;
+}
+
+.main-aside__link-title {
+    color: #c4cede;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: 0.49px;
+    
 }
