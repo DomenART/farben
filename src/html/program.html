@@ -44,11 +44,16 @@
             <div class="program-header__addition">дополнение, уточнение</div>
         </div>
         <div class="program-header__center">
-            <div class="program-header__progress-text">
-                прогресс на программе
-            </div>
             <div class="progress">
-                <img src="../img/progress.png" alt="" class="progress__img">
+                <div class="progress__text">прогресс на программе</div>
+                <div class="progress__scale">
+                    <div class="progress__done"></div>
+                    <div class="progress__available"></div>
+                </div>
+                <div class="progress__numbers">
+                    <div class="progress__level progress__level_done">20%</div>
+                    <div class="progress__level progress__level_available">35%</div>
+                </div>
             </div>
         </div>
         <div class="program-header__rightside">
@@ -263,21 +268,21 @@
             </aside>
         </div>
         <div class="uk-width-expand">
-            <main class="program">
+            <main class="program main-area">
                 <h1 class="program__title">Программа: <span>“Название программы, курса”</span></h1>
-                <div class="program__progress">
-                    <div class="program__progress-leftside">
-                        <svg class="program__progress-icon">
+                <div class="program__headway headway">
+                    <div class="headway__leftside">
+                        <svg class="headway__icon">
                             <use xlink:href="img/sprite.svg#settings"/>
                         </svg>
-                        <div class="program__progress-text">Текущая степень систематизации вашего бизнеса:</div>
-                        <div class="program__progress-value">78%</div>
+                        <div class="headway__text">Текущая степень систематизации вашего бизнеса:</div>
+                        <div class="headway__value">78%</div>
                     </div>
-                    <button class="program__progress-btn" type="button">
-                        <svg class="program__progress-btn-icon">
+                    <button class="headway__btn" type="button">
+                        <svg class="headway__btn-icon">
                             <use xlink:href="img/sprite.svg#refresh"/>
                         </svg>
-                        <span class="program__progress-btn-text">
+                        <span class="headway__btn-text">
                             Актуализировать
                         </span>
                     </button>
@@ -285,54 +290,54 @@
                 <div class="program__structure-heading">
                     Структура программы
                 </div>
-                <ul class="program__structure-list">
+                <ul class="structure">
                     <li>
-                        <button class="program__section-control" type="button" uk-toggle="target: #subsection-1"></button>
-                        <a class="program__section" href="#">
-                            <span class="program__section-pic">
-                                <svg class="program__section-icon">
+                        <button class="structure__control" type="button" uk-toggle="target: #subsection-1"></button>
+                        <a class="structure__section" href="#">
+                            <span class="structure__section-pic">
+                                <svg class="structure__section-icon">
                                     <use xlink:href="img/sprite.svg#folder"/>
                                 </svg>
                             </span>
-                            <span class="program__section-title">II. Модель системного бизнеса 2</span>
+                            <span class="structure__section-title">II. Модель системного бизнеса 2</span>
                         </a>
-                        <ul class="program__subsection-list" id="subsection-1">
+                        <ul class="structure__subsection-list" id="subsection-1">
                             <li>
-                                <a class="program__subsection" href="#">
-                                    <svg class="program__subsection-icon-done">
+                                <a class="structure__subsection" href="#">
+                                    <svg class="structure__subsection-icon-done">
                                         <use xlink:href="img/sprite.svg#doc-done"/>
                                     </svg>
-                                    <span class="program__subsection-title">
+                                    <span class="structure__subsection-title">
                                         Модель системного бизнеса
                                     </span>
                                 </a>
                             </li>
                             <li>
-                                <a class="program__subsection" href="#">
-                                    <svg class="program__subsection-icon-done">
+                                <a class="structure__subsection" href="#">
+                                    <svg class="structure__subsection-icon-done">
                                         <use xlink:href="img/sprite.svg#doc-done"/>
                                     </svg>
-                                    <span class="program__subsection-title">
+                                    <span class="structure__subsection-title">
                                         Модель системного бизнеса
                                     </span>
                                 </a>
                             </li>
                             <li>
-                                <a class="program__subsection" href="#">
-                                    <svg class="program__subsection-icon-done">
+                                <a class="structure__subsection" href="#">
+                                    <svg class="structure__subsection-icon-done">
                                         <use xlink:href="img/sprite.svg#doc-done"/>
                                     </svg>
-                                    <span class="program__subsection-title">
+                                    <span class="structure__subsection-title">
                                         Модель системного бизнеса
                                     </span>
                                 </a>
                             </li>
                             <li>
-                                <a class="program__subsection" href="#">
-                                    <svg class="program__subsection-icon">
+                                <a class="structure__subsection" href="#">
+                                    <svg class="structure__subsection-icon">
                                         <use xlink:href="img/sprite.svg#doc"/>
                                     </svg>
-                                    <span class="program__subsection-title">
+                                    <span class="structure__subsection-title">
                                         Модель системного бизнеса
                                     </span>
                                 </a>
@@ -340,52 +345,52 @@
                         </ul>
                     </li>
                     <li>
-                        <button class="program__section-control" type="button" uk-toggle="target: #subsection-2"></button>
-                        <a class="program__section" href="#">
-                            <span class="program__section-pic">
-                                <svg class="program__section-icon">
+                        <button class="structure__control" type="button" uk-toggle="target: #subsection-2"></button>
+                        <a class="structure__section" href="#">
+                            <span class="structure__section-pic">
+                                <svg class="structure__section-icon">
                                     <use xlink:href="img/sprite.svg#folder"/>
                                 </svg>
                             </span>
-                            <span class="program__section-title">II. Модель системного бизнеса 2</span>
+                            <span class="structure__section-title">II. Модель системного бизнеса 2</span>
                         </a>
-                        <ul class="program__subsection-list" id="subsection-2">
+                        <ul class="structure__subsection-list" id="subsection-2">
                             <li>
-                                <a class="program__subsection" href="#">
-                                    <svg class="program__subsection-icon">
+                                <a class="structure__subsection" href="#">
+                                    <svg class="structure__subsection-icon-done">
                                         <use xlink:href="img/sprite.svg#doc-done"/>
                                     </svg>
-                                    <span class="program__subsection-title">
+                                    <span class="structure__subsection-title">
                                         Модель системного бизнеса
                                     </span>
                                 </a>
                             </li>
                             <li>
-                                <a class="program__subsection" href="#">
-                                    <svg class="program__subsection-icon">
-                                        <use xlink:href="img/sprite.svg#doc"/>
+                                <a class="structure__subsection" href="#">
+                                    <svg class="structure__subsection-icon-done">
+                                        <use xlink:href="img/sprite.svg#doc-done"/>
                                     </svg>
-                                    <span class="program__subsection-title">
+                                    <span class="structure__subsection-title">
                                         Модель системного бизнеса
                                     </span>
                                 </a>
                             </li>
                             <li>
-                                <a class="program__subsection" href="#">
-                                    <svg class="program__subsection-icon">
-                                        <use xlink:href="img/sprite.svg#doc"/>
+                                <a class="structure__subsection" href="#">
+                                    <svg class="structure__subsection-icon-done">
+                                        <use xlink:href="img/sprite.svg#doc-done"/>
                                     </svg>
-                                    <span class="program__subsection-title">
+                                    <span class="structure__subsection-title">
                                         Модель системного бизнеса
                                     </span>
                                 </a>
                             </li>
                             <li>
-                                <a class="program__subsection" href="#">
-                                    <svg class="program__subsection-icon">
+                                <a class="structure__subsection" href="#">
+                                    <svg class="structure__subsection-icon">
                                         <use xlink:href="img/sprite.svg#doc"/>
                                     </svg>
-                                    <span class="program__subsection-title">
+                                    <span class="structure__subsection-title">
                                         Модель системного бизнеса
                                     </span>
                                 </a>
@@ -393,42 +398,52 @@
                         </ul>
                     </li>
                     <li>
-                        <button class="program__section-control" type="button" uk-toggle="target: #subsection-3"></button>
-                        <a class="program__section" href="#">
-                            <span class="program__section-pic">
-                                <svg class="program__section-icon">
+                        <button class="structure__control" type="button" uk-toggle="target: #subsection-3"></button>
+                        <a class="structure__section" href="#">
+                            <span class="structure__section-pic">
+                                <svg class="structure__section-icon">
                                     <use xlink:href="img/sprite.svg#folder"/>
                                 </svg>
                             </span>
-                            <span class="program__section-title">II. Модель системного бизнеса 2</span>
+                            <span class="structure__section-title">II. Модель системного бизнеса 2</span>
                         </a>
-                        <ul class="program__subsection-list" id="subsection-3">
+                        <ul class="structure__subsection-list" id="subsection-3">
                             <li>
-                                <a class="program__subsection" href="#">
-                                    <svg class="program__subsection-icon">
+                                <a class="structure__subsection" href="#">
+                                    <svg class="structure__subsection-icon-done">
                                         <use xlink:href="img/sprite.svg#doc-done"/>
                                     </svg>
-                                    <span class="program__subsection-title">
+                                    <span class="structure__subsection-title">
                                         Модель системного бизнеса
                                     </span>
                                 </a>
                             </li>
                             <li>
-                                <a class="program__subsection" href="#">
-                                    <svg class="program__subsection-icon">
+                                <a class="structure__subsection" href="#">
+                                    <svg class="structure__subsection-icon-done">
                                         <use xlink:href="img/sprite.svg#doc-done"/>
                                     </svg>
-                                    <span class="program__subsection-title">
+                                    <span class="structure__subsection-title">
                                         Модель системного бизнеса
                                     </span>
                                 </a>
                             </li>
                             <li>
-                                <a class="program__subsection" href="#">
-                                    <svg class="program__subsection-icon">
+                                <a class="structure__subsection" href="#">
+                                    <svg class="structure__subsection-icon-done">
+                                        <use xlink:href="img/sprite.svg#doc-done"/>
+                                    </svg>
+                                    <span class="structure__subsection-title">
+                                        Модель системного бизнеса
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="structure__subsection" href="#">
+                                    <svg class="structure__subsection-icon">
                                         <use xlink:href="img/sprite.svg#doc"/>
                                     </svg>
-                                    <span class="program__subsection-title">
+                                    <span class="structure__subsection-title">
                                         Модель системного бизнеса
                                     </span>
                                 </a>

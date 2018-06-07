@@ -20,11 +20,71 @@
             <a class="main-header__programs" href="#">
                 « Список учебных программ
             </a>
-            <a class="main-header__help" href="#">
+            <button class="main-header__help" type="button" uk-toggle="target: #help">
                 <svg class="main-header__help-icon">
                     <use xlink:href="img/sprite.svg#help">
                 </svg>
-            </a>
+            </button>
+            <div id="help" uk-modal>
+                <div class="help uk-modal-dialog uk-modal-body">
+                    <button class="help__close uk-modal-close" type="button" uk-close></button>
+                    <ul class="help__nav" uk-switcher="connect: .help__content;">
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                    <ul class="uk-switcher help__content">
+                        <li>
+                            <div class="help__image-area">
+                                <img class="help__image" src="../img/help-image.jpg" alt="">
+                            </div>
+                            <div class="help__desc-area">
+                                <div class="help__desc-title">
+                                    Шаг 6 - Вопросы эксперту
+                                </div>
+                                <div class="help__desc-text">
+                                    Вы можете задать вопрос эксперту на открытой сессии “вопрос-ответ”
+                                    в соответствующем разделе.
+                                </div>
+                                <button class="help__desc-further" type="button">Дальше</button>
+                                <button class="help__desc-end uk-modal-close" type="button">Мне всё понятно</button>
+                            </div>
+                        </li>
+                        <li> 
+                            <div class="help__image-area">
+                                <img class="help__image" src="../img/help-image.jpg" alt="">
+                            </div>
+                            <div class="help__desc-area">
+                                <div class="help__desc-title">
+                                    Шаг 3 - Помощь эксперту
+                                </div>
+                                <div class="help__desc-text">
+                                    Вы можете задать вопрос эксперту на открытой сессии “вопрос-ответ”
+                                    в соответствующем разделе.
+                                </div>
+                                <button class="help__desc-further" type="button">Дальше</button>
+                                <button class="help__desc-end uk-modal-close" type="button">Мне всё понятно</button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="help__image-area">
+                                <img class="help__image" src="../img/help-image.jpg" alt="">
+                            </div>
+                            <div class="help__desc-area">
+                                <div class="help__desc-title">
+                                    Шаг 1 - Помощь мне
+                                </div>
+                                <div class="help__desc-text">
+                                    Вы можете задать вопрос эксперту на открытой сессии “вопрос-ответ”
+                                    в соответствующем разделе.
+                                </div>
+                                <button class="help__desc-further" type="button">Дальше</button>
+                                <button class="help__desc-end uk-modal-close" type="button">Мне всё понятно</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
             <button class="main-header__notification-btn notification-btn" type="button">
                 <svg class="notification-btn__icon">
                     <use xlink:href="img/sprite.svg#bell" />
@@ -44,9 +104,6 @@
             <div class="program-header__addition">дополнение, уточнение</div>
         </div>
         <div class="program-header__center">
-            <div class="program-header__progress-text">
-                прогресс на программе
-            </div>
             <div class="progress">
                 <div class="progress__text">прогресс на программе</div>
                 <div class="progress__scale">
@@ -271,86 +328,82 @@
             </aside>
         </div>
         <div class="uk-width-expand">
-            <main class="expert main-area">
+            <main class="tasks main-area">
                 <ul class="breadcrumb uk-breadcrumb">
                     <li><a href="">Программа, курс</a></li>
-                    <li><span>Задать вопрос эксперту</span></li>
+                    <li><span>Список всех заданий</span></li>
                 </ul>
-                <h1 class="expert__page-title page-title">
-                    <svg class="page-title__icon page-title__icon_expert">
-                        <use xlink:href="img/sprite.svg#bubbles"/>
+                <h1 class="tasks__page-title page-title">
+                    <svg class="page-title__icon page-title__icon_tasks">
+                        <use xlink:href="img/sprite.svg#doc"/>
                     </svg>
-                    Задать вопрос эксперту
+                    Все задания
                 </h1>
-                <div class="expert__ad ad">
-                    <div class="ad__heading">
-                        Мастер - группа 31 мая
+                <div class="tasks__module module uk-table">
+                    <div class="module__title">
+                        I. Модель системного бизнеса и личная эффективность собственника
                     </div>
-                    <div class="ad__addiction">
-                        Пожалуйста, оставьте здесь свой вопросы, и Фамилия Имя отвечающего ответит на них на ближайшей мастер - группе <strong>31 мая в 14:00</strong>
+                    <div class="module__heading">
+                        <div>
+                            Задание
+                        </div>
+                        <div>   
+                            Статус
+                        </div>
                     </div>
-                    <div class="ad__text">
-                        <p>
-                            <strong><i>Внимание!</i></strong>
-                        </p>
-                        <p>
-                        <i>Вопросы принимаются <strong>до 18:00</strong> дня, предшествующего дате онлайна. Вопросы, присланные позднее, автоматически переносятся на следующую онлайн-встречу.</i>
-                        </p>
-                        <p>
-                        Приглашение на вебинар придет Вам за час до  старта онлайн-встречи
-                        </p>
-                    </div>
+                    <a class="module__exercise" href="#">
+                        <span class="module__exercise-title">Модель системного бизнеса</span>
+                        <span class="module__status module__status_isDone" uk-tooltip="title: Выполнено; pos: right; cls: uk-active module__status-tip;"></span>
+                    </a>
+                    <a class="module__exercise" href="#">
+                        <span class="module__exercise-title">Модель системного бизнеса</span>
+                        <span class="module__status module__status_isDone" uk-tooltip="title: Выполнено; pos: right; cls: uk-active module__status-tip;"></span>
+                    </a>
+                    <a class="module__exercise" href="#">
+                        <span class="module__exercise-title">Модель системного бизнеса</span>
+                        <span class="module__status module__status_isDuring" uk-tooltip="title: В процессе выполнения; pos: right; cls: uk-active module__status-tip;"></span>
+                    </a>
+                    <a class="module__exercise" href="#">
+                        <span class="module__exercise-title">Модель системного бизнеса</span>
+                        <span class="module__status module__status_isNotDone" uk-tooltip="title: Не выполнено; pos: right; cls: uk-active module__status-tip;"></span>
+                    </a>
+                    <a class="module__exercise" href="#">
+                        <span class="module__exercise-title">Модель системного бизнеса</span>
+                        <span class="module__status module__status_isNotDone" uk-tooltip="title: Не выполнено; pos: right; cls: uk-active module__status-tip;"></span>
+                    </a>
                 </div>
-                <div class="expert__questions questions">
-                    <div class="questions__heading">
-                        Вопросы участников к ближайшей сессии “Вопрос-ответ”:
+                <div class="tasks__module module uk-table">
+                    <div class="module__title">
+                        I. Модель системного бизнеса и личная эффективность собственника
                     </div>
-                    <div class="questions__pool">
-                        <article class="question-item">
-                            <img class="question-item__avatar" src="../img/avatar.svg" alt="">
-                            <div>
-                                <div class="question-item__message">
-                                    <p>
-                                        Жи́зненный цикл организа́ции — совокупность стадий развития, которые проходит фирма за период своего существования.
-                                    </p>
-                                    <p>
-                                        Эта теория, разработанная непревзойденным бизнес-консультантом мира Ицхак Кальдерон Адизесом, рассматривается в рамках менеджмента и подразумевает прохождение организацией нескольких этапов развития?
-                                    </p>    
-                                </div>
-                                <div class="question-item__author">
-                                    UserName,    30 мая в 16:26
-                                </div>
-                            </div>
-                        </article>
-                        <article class="question-item">
-                            <img class="question-item__avatar" src="../img/avatar.svg" alt="">
-                            <div>
-                                <div class="question-item__message">
-                                    <p>
-                                            Жизненный цикл компании имеет следующий вид?
-                                    </p>
-                                </div>
-                                <div class="question-item__author">
-                                    UserName,    30 мая в 16:26
-                                </div>
-                            </div>
-                        </article>
+                    <div class="module__heading">
+                        <div>
+                            Задание
+                        </div>
+                        <div>   
+                            Статус
+                        </div>
                     </div>
-                    <div class="questions__input">
-                        <form class="questions__form">
-                            <textarea class="questions__textarea uk-textarea" placeholder="Введите текст" required></textarea>
-                            <button class="questions__attachment" type="button">
-                                <svg class="questions__attachment-icon">
-                                    <use xlink:href="img/sprite.svg#clip"/>
-                                </svg>
-                            </button>
-                            <button class="questions__send" type="submit">
-                                <svg class="questions__send-icon">
-                                    <use xlink:href="img/sprite.svg#send"/>
-                                </svg>
-                            </button>
-                        </form>
-                    </div>
+                    <a class="module__exercise" href="#">
+                        <span class="module__exercise-title">Модель системного бизнеса</span>
+                        <span class="module__status module__status_isDone" uk-tooltip="title: Выполнено; pos: right; cls: uk-active module__status-tip;"></span>
+                    </a>
+                    <a class="module__exercise" href="#">
+                        <span class="module__exercise-title">Модель системного бизнеса</span>
+                        <span class="module__status module__status_isDone" uk-tooltip="title: Выполнено; pos: right; cls: uk-active module__status-tip;"></span>
+                    </a>
+                    <a class="module__exercise" href="#">
+                        <span class="module__exercise-title">Модель системного бизнеса</span>
+                        <span class="module__status module__status_isDuring" uk-tooltip="title: В процессе выполнения; pos: right; cls: uk-active module__status-tip;"></span>
+                    </a>
+                    <a class="module__exercise" href="#">
+                        <span class="module__exercise-title">Модель системного бизнеса</span>
+                        <span class="module__status module__status_isNotDone" uk-tooltip="title: Не выполнено; pos: right; cls: uk-active module__status-tip;"></span>
+                    </a>
+                    <a class="module__exercise" href="#">
+                        <span class="module__exercise-title">Модель системного бизнеса</span>
+                        <span class="module__status module__status_isNotDone" uk-tooltip="title: Не выполнено; pos: right; cls: uk-active module__status-tip;"></span>
+                    </a>
                 </div>
             </main>
         </div>

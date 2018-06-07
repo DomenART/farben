@@ -1,0 +1,88 @@
+.module {
+    max-width: 1120px;
+    border-left: 1px solid #cbd4dc;
+    border-right: 1px solid #cbd4dc;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.07);
+    
+}
+
+.module__title {
+    border-bottom: 1px solid #cbd4dc;
+    padding: 20px 30px;
+    background-color: #dae3ec;
+    color: #29313c;
+    letter-spacing: 0.16px;
+}
+
+.module__heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f2f5fa;
+    padding: 15px 30px;
+    border-bottom: 1px solid #e5eaef;
+    color: #a1abb7;
+    font-size: 12px;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 0.12px;
+}
+
+.module__exercise {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #e5eaef;
+    padding: 22px 30px;
+    transition: background-color 0.25s;
+    color: #525263;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 14px;
+    letter-spacing: 0.14px;
+    &:hover {
+        color: currentColor;
+        text-decoration: none;
+        background-color: #f2f5fa;
+        transition: background-color 0.25s;
+    }
+}
+
+.module__status {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 16px;
+    position: relative;
+    z-index: 1;
+    &_isDone {
+        box-shadow: inset -1px 2px 4px rgba(0, 0, 0, 0.4);
+        background-color: #4fc881;
+    }
+    &_isDuring {
+        box-shadow: inset -1px 2px 4px rgba(0, 0, 0, 0.4);
+        background-color: #fdd95e;
+    }
+    &_isNotDone {
+        background-color: #cacaca;
+    }
+}
+
+.module__status-tip {
+    padding: 5px 10px;
+    background-color: #747477;
+    line-height: 1;
+    &::before {
+        content: '';
+        width: 6px;
+        height: 6px;
+        background-color: #747477;
+        border-top: 1px solid #747477;
+        border-right: 1px solid #747477;
+        position: absolute;
+        top: 50%;
+        left: -6px;
+        z-index: 1;
+        transform: rotate(45deg) translateY(-50%);
+    }
+}
