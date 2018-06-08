@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ABC Farben</title>
+    <link href="main.css" rel="stylesheet">
+</head>
+<body class="page">
+    <header class="main-header">
+        <div class="main-header__leftside">
+            <img class="main-header__logo" src="../img/logo.png" alt="">
+            <div class="main-header__title">
+                Электронная Академия<br>
+                ABC Farben
+            </div>
+        </div>
+        <div class="main-header__rightside">
+            <a class="main-header__programs" href="#">
+                « Список учебных программ
+            </a>
+            <button class="main-header__help" type="button" uk-toggle="target: #help">
+                <svg class="main-header__help-icon">
+                    <use xlink:href="img/sprite.svg#help">
+                </svg>
+            </button>
+            <div id="help" uk-modal>
+                <div class="help uk-modal-dialog uk-modal-body">
+                    <button class="help__close uk-modal-close" type="button" uk-close></button>
+                    <ul class="help__nav" uk-switcher="connect: .help__content;">
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                    <ul class="uk-switcher help__content">
+                        <li>
+                            <div class="help__image-area">
+                                <img class="help__image" src="../img/help-image.jpg" alt="">
+                            </div>
+                            <div class="help__desc-area">
+                                <div class="help__desc-title">
+                                    Шаг 6 - Вопросы эксперту
+                                </div>
+                                <div class="help__desc-text">
+                                    Вы можете задать вопрос эксперту на открытой сессии “вопрос-ответ”
+                                    в соответствующем разделе.
+                                </div>
+                                <button class="help__desc-further" type="button">Дальше</button>
+                                <button class="help__desc-end uk-modal-close" type="button">Мне всё понятно</button>
+                            </div>
+                        </li>
+                        <li> 
+                            <div class="help__image-area">
+                                <img class="help__image" src="../img/help-image.jpg" alt="">
+                            </div>
+                            <div class="help__desc-area">
+                                <div class="help__desc-title">
+                                    Шаг 3 - Помощь эксперту
+                                </div>
+                                <div class="help__desc-text">
+                                    Вы можете задать вопрос эксперту на открытой сессии “вопрос-ответ”
+                                    в соответствующем разделе.
+                                </div>
+                                <button class="help__desc-further" type="button">Дальше</button>
+                                <button class="help__desc-end uk-modal-close" type="button">Мне всё понятно</button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="help__image-area">
+                                <img class="help__image" src="../img/help-image.jpg" alt="">
+                            </div>
+                            <div class="help__desc-area">
+                                <div class="help__desc-title">
+                                    Шаг 1 - Помощь мне
+                                </div>
+                                <div class="help__desc-text">
+                                    Вы можете задать вопрос эксперту на открытой сессии “вопрос-ответ”
+                                    в соответствующем разделе.
+                                </div>
+                                <button class="help__desc-further" type="button">Дальше</button>
+                                <button class="help__desc-end uk-modal-close" type="button">Мне всё понятно</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button class="main-header__notification-btn notification-btn" type="button">
+                <svg class="notification-btn__icon">
+                    <use xlink:href="img/sprite.svg#bell" />
+                </svg>
+                <div class="notification-btn__counter"><span>348</span></div>
+            </button>
+            <a class="main-header__user" href="#">
+                UserName
+                <img class="main-header__user-avatar" src="../img/avatar.svg" alt="">
+            </a>
+        </div>
+    </header>
+    <header class="program-header">
+        <div class="program-header__leftside">
+            <img class="program-header__pic" src="../img/course.svg" alt="">
+            <div class="program-header__title">Программа, к которой относится уведомление</div>
+            <div class="program-header__addition">дополнение, уточнение</div>
+        </div>
+        <div class="program-header__center">
+            <div class="progress">
+                <div class="progress__text">прогресс на программе</div>
+                <div class="progress__scale">
+                    <div class="progress__done"></div>
+                    <div class="progress__available"></div>
+                </div>
+                <div class="progress__numbers">
+                    <div class="progress__level progress__level_done">20%</div>
+                    <div class="progress__level progress__level_available">35%</div>
+                </div>
+            </div>
+        </div>
+        <div class="program-header__rightside">
+            <ul class="program-header__menu">
+                <li><a href="#">Структура программы</a></li>
+                <li><a href="#">Wiki</a></li>
+                <li><a href="#">Задания</a></li>
+                <li><a href="#">Участники</a></li>
+                <li>
+                    <a class="program-header__fb" href="#">
+                        <svg class="program-header__fb-icon">
+                            <use href="img/sprite.svg#fb"/>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="uk-grid">
+        <div class="uk-width-1-5">
+            <aside class="main-aside">
+                <div class="main-aside__section">
+                    <div class="main-aside__structure-heading">
+                        <img class="main-aside__section-pic" src="../img/structure.svg" alt="">
+                        <span class="main-aside__section-title">Структура программы</span>
+                    </div>
+                    <ul class="main-aside__structure-list">
+                        <li>
+                            <a class="main-aside__structure main-aside__structure_isAvailable" href="#">
+                                <svg class="main-aside__structure-icon">
+                                    <use xlink:href="img/sprite.svg#folder"/>
+                                </svg>
+                                <span class="main-aside__structure-title">I. Модель системного развития lorem ipsum</span>
+                            </a>
+                            <button class="main-aside__structure-dropdown" type="button"></button>
+                        </li>
+                        <li>
+                            <a class="main-aside__structure main-aside__structure_isAvailable" href="#">
+                                <svg class="main-aside__structure-icon">
+                                    <use xlink:href="img/sprite.svg#folder"/>
+                                </svg>
+                                <span class="main-aside__structure-title">II. Модель системного мышления</span>
+                            </a>
+                            <button class="main-aside__structure-dropdown" type="button" uk-toggle="target: #substructure-2"></button>
+                            <ul class="main-aside__substructure-list" id="substructure-2">
+                                <li>
+                                    <a class="main-aside__substructure" href="#">
+                                        <svg class="main-aside__substructure-icon-done">
+                                            <use xlink:href="img/sprite.svg#doc-done"/>
+                                        </svg>                  
+                                        <span class="main-aside__substructure-title">
+                                            Модель системного бизнеса
+                                        </span>
+                                    </a>
+                                </li>            
+                                <li>
+                                    <a class="main-aside__substructure" href="#">
+                                        <svg class="main-aside__substructure-icon">
+                                            <use xlink:href="img/sprite.svg#doc"/>
+                                        </svg>
+                                        <span class="main-aside__substructure-title">
+                                            Модель системного бизнеса
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="main-aside__substructure" href="#">
+                                        <svg class="main-aside__substructure-icon">
+                                            <use xlink:href="img/sprite.svg#doc"/>
+                                        </svg>
+                                        <span class="main-aside__substructure-title">
+                                            Модель системного бизнеса
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="main-aside__substructure" href="#">
+                                        <svg class="main-aside__substructure-icon">
+                                            <use xlink:href="img/sprite.svg#doc"/>
+                                        </svg>
+                                        <span class="main-aside__substructure-title">
+                                            Модель системного бизнеса
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="main-aside__structure main-aside__structure_isAvailable" href="#">
+                                <svg class="main-aside__structure-icon">
+                                    <use xlink:href="img/sprite.svg#folder"/>
+                                </svg>
+                                <span class="main-aside__structure-title">III. Организационная с ...</span>
+                            </a>
+                            <button class="main-aside__structure-dropdown" type="button"></button>
+                        </li>
+                        <li>
+                            <a class="main-aside__structure main-aside__structure_isAvailable" href="#">
+                                <svg class="main-aside__structure-icon">
+                                    <use xlink:href="img/sprite.svg#folder"/>
+                                </svg>
+                                <span class="main-aside__structure-title">IV. Модель системного ...</span>
+                            </a>
+                            <button class="main-aside__structure-dropdown" type="button"></button>
+                        </li>
+                        <li>
+                            <a class="main-aside__structure main-aside__structure_isAvailable" href="#">
+                                <svg class="main-aside__structure-icon">
+                                    <use xlink:href="img/sprite.svg#folder"/>
+                                </svg>
+                                <span class="main-aside__structure-title">V. Модель системного ...</span>
+                            </a>
+                            <button class="main-aside__structure-dropdown" type="button"></button>
+                        </li>
+                        <li>
+                            <a class="main-aside__structure main-aside__structure_isAvailable" href="#">
+                                <svg class="main-aside__structure-icon">
+                                    <use xlink:href="img/sprite.svg#folder"/>
+                                </svg>
+                                <span class="main-aside__structure-title">VI. Модель системного ...</span>
+                            </a>
+                            <button class="main-aside__structure-dropdown" type="button"></button>
+                        </li>
+                        <li>
+                            <a class="main-aside__structure main-aside__structure_isAvailable" href="#">
+                                <svg class="main-aside__structure-icon">
+                                    <use xlink:href="img/sprite.svg#folder"/>
+                                </svg>
+                                <span class="main-aside__structure-title">VII. Модель системного ...</span>
+                            </a>
+                            <button class="main-aside__structure-dropdown" type="button"></button>
+                        </li>
+                        <li>
+                            <a class="main-aside__structure main-aside__structure_isAvailable" href="#">
+                                <svg class="main-aside__structure-icon">
+                                    <use xlink:href="img/sprite.svg#folder"/>
+                                </svg>
+                                <span class="main-aside__structure-title">VIII. Модель системного ...</span>
+                            </a>
+                            <button class="main-aside__structure-dropdown" type="button"></button>
+                        </li>
+                        <li>
+                            <a class="main-aside__structure main-aside__structure_isAvailable" href="#">
+                                <svg class="main-aside__structure-icon">
+                                    <use xlink:href="img/sprite.svg#folder"/>
+                                </svg>
+                                <span class="main-aside__structure-title">IX. Модель системного ...</span>
+                            </a>
+                            <button class="main-aside__structure-dropdown" type="button"></button>
+                        </li>
+                        <li>
+                            <a class="main-aside__structure main-aside__structure_isLocked" href="#">
+                                <svg class="main-aside__structure-icon-locked">
+                                    <use xlink:href="img/sprite.svg#folder-locked"/>
+                                </svg>
+                                <span class="main-aside__structure-title">X. Модель системного ...</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="main-aside__structure main-aside__structure_isLocked" href="#">
+                                <svg class="main-aside__structure-icon-locked">
+                                    <use xlink:href="img/sprite.svg#folder-locked"/>
+                                </svg>
+                                <span class="main-aside__structure-title">XI. Модель системного ...</span>
+                            </a>
+                            <button class="main-aside__structure-dropdown" type="button"></button>
+                        </li>
+                        <li>
+                            <a class="main-aside__structure main-aside__structure_isLocked" href="#">
+                                <svg class="main-aside__structure-icon-locked">
+                                    <use xlink:href="img/sprite.svg#folder-locked"/>
+                                </svg>
+                                <span class="main-aside__structure-title">XII. Модель системного ...</span>
+                            </a>
+                            <button class="main-aside__structure-dropdown" type="button"></button>
+                        </li>
+                        <li>
+                            <a class="main-aside__structure main-aside__structure_isLocked" href="#">
+                                <svg class="main-aside__structure-icon-locked">
+                                    <use xlink:href="img/sprite.svg#folder-locked"/>
+                                </svg>
+                                <span class="main-aside__structure-title">XII. Модель системного ...</span>
+                            </a>
+                            <button class="main-aside__structure-dropdown" type="button"></button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main-aside__section main-aside__structure_isLocked">
+                    <a href="#" class="main-aside__link">
+                        <svg class="main-aside__icon main-aside__icon_calendar">
+                            <use xlink:href="img/sprite.svg#calendar"/>
+                        </svg>
+                        <span class="main-aside__link-title">Календарь</span>
+                    </a>
+                </div>
+                <div class="main-aside__section">
+                    <a href="#" class="main-aside__link">
+                        <svg class="main-aside__icon main-aside__icon_expert">
+                            <use xlink:href="img/sprite.svg#bubbles"/>
+                        </svg>
+                        <span class="main-aside__link-title">Задать вопрос эксперту</span>
+                    </a>
+                </div>
+                <div class="main-aside__section">
+                    <a href="#" class="main-aside__link">
+                        <svg class="main-aside__icon main-aside__icon_curator">
+                            <use xlink:href="img/sprite.svg#curator"/>
+                        </svg>
+                        <span class="main-aside__link-title">Мой куратор</span>
+                    </a>
+                </div>
+            </aside>
+        </div>
+        <div class="uk-width-expand">
+            <main class="lesson main-area">
+                <ul class="breadcrumb uk-breadcrumb">
+                    <li><a href="#">ПРОГРАММА, КУРС</a></li>
+                    <li><a href="#">II.Модель системного бизнеса</a></li>
+                    <li><a href="#">Жизненные циклы компании</a></li>
+                    <li><span>Урок модуля</span></li>
+                </ul>
+                <h1 class="lesson__page-title page-title">
+                    <svg class="page-title__icon page-title__icon_lesson">
+                        <use xlink:href="img/sprite.svg#doc"/>
+                    </svg>
+                    Жизненные циклы компании (заголовок подраздела)
+                </h1>
+                <div class="content">
+                    <p>
+                        Жи́зненный цикл организа́ции — совокупность стадий развития, которые проходит фирма за период своего существования.
+                    </p>
+                    <p>
+                        Эта теория, разработанная непревзойденным бизнес-консультантом мира Ицхак Кальдерон Адизесом, рассматривается в рамках менеджмента и подразумевает прохождение организацией нескольких этапов развития (аналогия с живыми существами): становление, рост, зрелость, смерть. Но последний этап не совсем применим к организации, так как не всякое искусственное создание обязательно должно умереть.
+                    </p>
+                    <video controls="controls" poster="img/video-poster.jpg" paused>
+                        <source src="img/Big Buck Bunny.mp4" type="video/mp4">
+                        Ваш браузер не поддерживает тег видео.
+                    </video>
+                    <p> 
+                        Жизненный цикл имеет следующий вид: зарождение и становление, рост, когда фирма активно заполняет выбранный ею сегмент рынка, зрелость, когда фирма пытается сохранить имеющуюся долю рынка под своим контролем и старость, когда фирма быстро теряет свою долю рынка и вытесняется конкурентами. В дальнейшем организация либо ликвидируется, либо вливается в более крупную, либо разбивается на более мелкие организации, которые в зависимости от ситуации могут оказаться на стадиях роста или зрелости (реже — других стадиях).
+                    </p> 
+                </div>
+                <div class="training-nav">
+                    <div class="training-nav__leftside">
+                        <a class="nav-btn" href="#">« Предыдущий урок </a>
+                        <a class="link-btn" href="#">Перейти к заданию</a>
+                        <a class="nav-btn" href="#">Следующий урок »</a>
+                    </div>
+                    <div class="training-nav__rightside">
+                        <a class="function-btn" href="#">Следующий модуль</a>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="bundle.js"></script>
+</body>
+</html>
