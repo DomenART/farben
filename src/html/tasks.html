@@ -10,11 +10,13 @@
 <body class="page">
     <header class="main-header">
         <div class="main-header__leftside">
-            <img class="main-header__logo" src="../img/logo.png" alt="">
-            <div class="main-header__title">
-                Электронная Академия<br>
-                ABC Farben
-            </div>
+            <a class="main-header__logo">
+                <img class="main-header__logo-img" src="../img/logo.png" alt="">
+                <div class="main-header__logo-title">
+                    Электронная Академия<br>
+                    ABC Farben
+                </div>
+            </a>
         </div>
         <div class="main-header__rightside">
             <a class="main-header__programs" href="#">
@@ -91,6 +93,59 @@
                 </svg>
                 <div class="notification-btn__counter"><span>348</span></div>
             </button>
+            <div class="notifications" uk-dropdown="mode: click; pos: right-top;">
+                <div class="notifications__inner">
+                    <div class="notification-item">
+                        <div class="notification-item__title">
+                            Программа, к которой относится уведомление
+                        </div>
+                        <div class="notification-item__info">
+                            <a class="notification-item__link" href="#">
+                                <span class="notification-item__calendar">
+                                    <svg class="notification-item__calendar-icon">
+                                        <use xlink:href="img/sprite.svg#calendar" />
+                                    </svg>
+                                </span>
+                                <span class="notification-item__text">
+                                    Дополнительное образование (психология бизнеса), тренинги, полиграф, консалтинг, исследования
+                                </span>
+                            </a>
+                            <button class="notification-item__remove-btn" type="button"></button>
+                        </div>
+                    </div>
+                    <div class="notification-item">
+                        <div class="notification-item__title">
+                            Программа, к которой относится уведомление
+                        </div>
+                        <div class="notification-item__info">
+                            <a class="notification-item__link" href="#">
+                                <span class="notification-item__calendar">
+                                    <svg class="notification-item__folder-icon">
+                                        <use xlink:href="img/sprite.svg#folder" />
+                                    </svg>
+                                </span>
+                                <span class="notification-item__text">
+                                    Открыт доступ к программе курса 
+                                </span>
+                            </a>
+                            <button class="notification-item__remove-btn" type="button"></button>
+                        </div>
+                        <div class="notification-item__info">
+                            <a class="notification-item__link" href="#">
+                                <span class="notification-item__calendar">
+                                    <svg class="notification-item__folder-icon">
+                                        <use xlink:href="img/sprite.svg#folder" />
+                                    </svg>
+                                </span>
+                                <span class="notification-item__text">
+                                    Открыт доступ к программе курса 
+                                </span>
+                            </a>
+                            <button class="notification-item__remove-btn" type="button"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <a class="main-header__user" href="#">
                 UserName
                 <img class="main-header__user-avatar" src="../img/avatar.svg" alt="">
@@ -104,6 +159,9 @@
             <div class="program-header__addition">дополнение, уточнение</div>
         </div>
         <div class="program-header__center">
+            <div class="program-header__progress-text">
+                прогресс на программе
+            </div>
             <div class="progress">
                 <div class="progress__text">прогресс на программе</div>
                 <div class="progress__scale">
@@ -301,13 +359,91 @@
                         </li>
                     </ul>
                 </div>
-                <div class="main-aside__section main-aside__structure_isLocked">
-                    <a href="#" class="main-aside__link">
-                        <svg class="main-aside__icon main-aside__icon_calendar">
+                <div class="main-aside__section">
+                    <button class="main-aside__link calendar-btn" type="button" uk-toggle="target: #calendar">
+                        <svg class="calendar-btn__icon">
                             <use xlink:href="img/sprite.svg#calendar"/>
                         </svg>
-                        <span class="main-aside__link-title">Календарь</span>
-                    </a>
+                        <span class="calendar-btn__title">Календарь</span>
+                    </button>
+                    <div class="calendar" id="calendar">
+                        <div class="calendar__control">
+                            <button class="calendar__control-prev" type="button"></button>
+                            <div class="calendar__control-month">Май</div>
+                            <button class="calendar__control-next" type="button"></button>
+                        </div>
+                        <table>
+                            <tr>
+                                <th>ПН</th>
+                                <th>ВТ</th>
+                                <th>СР</th>
+                                <th>ЧТ</th>
+                                <th>ПТ</th>
+                                <th>СБ</th>
+                                <th>ВС</th>
+                            </tr>
+                            <tr>
+                                <td class="calendar__outside-cell">30</td>
+                                <td>1</td>
+                                <td><button class="event-btn event-btn_haveEvent" uk-toggle="target: #event">2</button></td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>5</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>8</td>
+                                <td>9</td>
+                                <td><button class="event-btn event-btn_haveEvent">10</button></td>
+                                <td>1</td>
+                                <td>12</td>
+                                <td>13</td>
+                            </tr>
+                            <tr>
+                                <td>14</td>
+                                <td>15</td>
+                                <td>16</td>
+                                <td>17</td>
+                                <td>18</td>
+                                <td>19</td>
+                                <td>20</td>
+                            </tr>
+                            <tr>
+                                <td>21</td>
+                                <td>22</td>
+                                <td><button class="event-btn event-btn_haveEvent">23</button></td>
+                                <td>24</td>
+                                <td>25</td>
+                                <td>26</td>
+                                <td>27</td>
+                            </tr>
+                            <tr>
+                                <td>28</td>
+                                <td>29</td>
+                                <td>30</td>
+                                <td class="calendar__outside-cell">1</td>
+                                <td class="calendar__outside-cell">2</td>
+                                <td class="calendar__outside-cell">3</td>
+                                <td class="calendar__outside-cell">4</td>
+                            </tr>
+                        </table>
+                        <div id="event" uk-modal>
+                            <div class="event uk-modal-dialog uk-modal-body">
+                                <button class="close uk-modal-close" type="button" uk-close></button>
+                                <div class="event__heading">
+                                    <svg class="event__heading-icon">
+                                        <use xlink:href="img/sprite.svg#folder"/>
+                                    </svg>
+                                    <h3 class="event__heading-desc">Открытие модуля  17 июня в 09:00</h3>
+                                </div>
+                                <h3 class="event__title">V. Название модуля, может быть длинным</h3>
+                                <div class="event__text">
+                                    Небольшой текстовый блок, поясняющий подробнее, какое именно событие, что будет, кому подойдет и тд.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="main-aside__section">
                     <a href="#" class="main-aside__link">
@@ -328,84 +464,86 @@
             </aside>
         </div>
         <div class="uk-width-expand">
-            <main class="tasks main-area">
-                <ul class="breadcrumb uk-breadcrumb">
-                    <li><a href="">Программа, курс</a></li>
-                    <li><span>Список всех заданий</span></li>
-                </ul>
-                <h1 class="tasks__page-title page-title">
-                    <svg class="page-title__icon page-title__icon_tasks">
-                        <use xlink:href="img/sprite.svg#doc"/>
-                    </svg>
-                    Все задания
-                </h1>
-                <div class="tasks__module module uk-table">
-                    <div class="module__title">
-                        I. Модель системного бизнеса и личная эффективность собственника
-                    </div>
-                    <div class="module__heading">
-                        <div>
-                            Задание
+            <div class="container">
+                <main class="tasks main-area">
+                    <ul class="breadcrumb uk-breadcrumb">
+                        <li><a href="#">ПРОГРАММА, КУРС</a></li>
+                        <li><span>Список всех заданий</span></li>
+                    </ul>
+                    <h1 class="tasks__page-title page-title">
+                        <svg class="page-title__icon page-title__icon_tasks">
+                            <use xlink:href="img/sprite.svg#doc"/>
+                        </svg>
+                        Все задания
+                    </h1>
+                    <div class="tasks__module module uk-table">
+                        <div class="module__title">
+                            I. Модель системного бизнеса и личная эффективность собственника
                         </div>
-                        <div>   
-                            Статус
+                        <div class="module__heading">
+                            <div>
+                                Задание
+                            </div>
+                            <div>   
+                                Статус
+                            </div>
                         </div>
+                        <a class="module__exercise" href="#">
+                            <span class="module__exercise-title">Модель системного бизнеса</span>
+                            <span class="module__indicator indicator indicator_isDone" uk-tooltip="title: Выполнено; pos: right; cls: uk-active indicator__tip;"></span>
+                        </a>
+                        <a class="module__exercise" href="#">
+                            <span class="module__exercise-title">Модель системного бизнеса</span>
+                            <span class="module__indicator indicator indicator_isDone" uk-tooltip="title: Выполнено; pos: right; cls: uk-active indicator__tip;"></span>
+                        </a>
+                        <a class="module__exercise" href="#">
+                            <span class="module__exercise-title">Модель системного бизнеса</span>
+                            <span class="module__indicator indicator indicator_isDuring" uk-tooltip="title: В процессе выполнения; pos: right; cls: uk-active indicator__tip;"></span>
+                        </a>
+                        <a class="module__exercise" href="#">
+                            <span class="module__exercise-title">Модель системного бизнеса</span>
+                            <span class="module__indicator indicator indicator_isNotDone" uk-tooltip="title: Не выполнено; pos: right; cls: uk-active indicator__tip;"></span>
+                        </a>
+                        <a class="module__exercise" href="#">
+                            <span class="module__exercise-title">Модель системного бизнеса</span>
+                            <span class="module__indicator indicator indicator_isNotDone" uk-tooltip="title: Не выполнено; pos: right; cls: uk-active indicator__tip;"></span>
+                        </a>
                     </div>
-                    <a class="module__exercise" href="#">
-                        <span class="module__exercise-title">Модель системного бизнеса</span>
-                        <span class="module__indicator indicator indicator_isDone" uk-tooltip="title: Выполнено; pos: right; cls: uk-active indicator__tip;"></span>
-                    </a>
-                    <a class="module__exercise" href="#">
-                        <span class="module__exercise-title">Модель системного бизнеса</span>
-                        <span class="module__indicator indicator indicator_isDone" uk-tooltip="title: Выполнено; pos: right; cls: uk-active indicator__tip;"></span>
-                    </a>
-                    <a class="module__exercise" href="#">
-                        <span class="module__exercise-title">Модель системного бизнеса</span>
-                        <span class="module__indicator indicator indicator_isDuring" uk-tooltip="title: В процессе выполнения; pos: right; cls: uk-active indicator__tip;"></span>
-                    </a>
-                    <a class="module__exercise" href="#">
-                        <span class="module__exercise-title">Модель системного бизнеса</span>
-                        <span class="module__indicator indicator indicator_isNotDone" uk-tooltip="title: Не выполнено; pos: right; cls: uk-active indicator__tip;"></span>
-                    </a>
-                    <a class="module__exercise" href="#">
-                        <span class="module__exercise-title">Модель системного бизнеса</span>
-                        <span class="module__indicator indicator indicator_isNotDone" uk-tooltip="title: Не выполнено; pos: right; cls: uk-active indicator__tip;"></span>
-                    </a>
-                </div>
-                <div class="tasks__module module uk-table">
-                    <div class="module__title">
-                        I. Модель системного бизнеса и личная эффективность собственника
-                    </div>
-                    <div class="module__heading">
-                        <div>
-                            Задание
+                    <div class="tasks__module module uk-table">
+                        <div class="module__title">
+                            I. Модель системного бизнеса и личная эффективность собственника
                         </div>
-                        <div>   
-                            Статус
+                        <div class="module__heading">
+                            <div>
+                                Задание
+                            </div>
+                            <div>   
+                                Статус
+                            </div>
                         </div>
+                        <a class="module__exercise" href="#">
+                            <span class="module__exercise-title">Модель системного бизнеса</span>
+                            <span class="module__indicator indicator indicator_isDone" uk-tooltip="title: Выполнено; pos: right; cls: uk-active indicator__tip;"></span>
+                        </a>
+                        <a class="module__exercise" href="#">
+                            <span class="module__exercise-title">Модель системного бизнеса</span>
+                            <span class="module__indicator indicator indicator_isDone" uk-tooltip="title: Выполнено; pos: right; cls: uk-active indicator__tip;"></span>
+                        </a>
+                        <a class="module__exercise" href="#">
+                            <span class="module__exercise-title">Модель системного бизнеса</span>
+                            <span class="module__indicator indicator indicator_isDuring" uk-tooltip="title: В процессе выполнения; pos: right; cls: uk-active indicator__tip;"></span>
+                        </a>
+                        <a class="module__exercise" href="#">
+                            <span class="module__exercise-title">Модель системного бизнеса</span>
+                            <span class="module__indicator indicator indicator_isNotDone" uk-tooltip="title: Не выполнено; pos: right; cls: uk-active indicator__tip;"></span>
+                        </a>
+                        <a class="module__exercise" href="#">
+                            <span class="module__exercise-title">Модель системного бизнеса</span>
+                            <span class="module__indicator indicator indicator_isNotDone" uk-tooltip="title: Не выполнено; pos: right; cls: uk-active indicator__tip;"></span>
+                        </a>
                     </div>
-                    <a class="module__exercise" href="#">
-                        <span class="module__exercise-title">Модель системного бизнеса</span>
-                        <span class="module__indicator indicator indicator_isDone" uk-tooltip="title: Выполнено; pos: right; cls: uk-active indicator__tip;"></span>
-                    </a>
-                    <a class="module__exercise" href="#">
-                        <span class="module__exercise-title">Модель системного бизнеса</span>
-                        <span class="module__indicator indicator indicator_isDone" uk-tooltip="title: Выполнено; pos: right; cls: uk-active indicator__tip;"></span>
-                    </a>
-                    <a class="module__exercise" href="#">
-                        <span class="module__exercise-title">Модель системного бизнеса</span>
-                        <span class="module__indicator indicator indicator_isDuring" uk-tooltip="title: В процессе выполнения; pos: right; cls: uk-active indicator__tip;"></span>
-                    </a>
-                    <a class="module__exercise" href="#">
-                        <span class="module__exercise-title">Модель системного бизнеса</span>
-                        <span class="module__indicator indicator indicator_isNotDone" uk-tooltip="title: Не выполнено; pos: right; cls: uk-active indicator__tip;"></span>
-                    </a>
-                    <a class="module__exercise" href="#">
-                        <span class="module__exercise-title">Модель системного бизнеса</span>
-                        <span class="module__indicator indicator indicator_isNotDone" uk-tooltip="title: Не выполнено; pos: right; cls: uk-active indicator__tip;"></span>
-                    </a>
-                </div>
-            </main>
+                </main>
+            </div>
         </div>
     </div>
     <script src="bundle.js"></script>

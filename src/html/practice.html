@@ -366,11 +366,52 @@
                         </li>
                     </lo>
                 </div>
-                <div class="practice__questions questions">
-                    <div class="questions__heading">
+                <div class="practice__materials materials">
+                    <div class="materials__heading">Материалы к заданию:</div>
+                    <ul class="materials__list">
+                        <li>
+                            <a class="materials__item" href="#">
+                                <span class="materials__icon"></span>
+                                Название документа, прикрепленного к заданию.формат
+                            </a>
+                        </li>
+                        <li>
+                            <a class="materials__item" href="#">
+                                <span class="materials__icon"></span>
+                                Название материала к заданию.docx
+                            </a>
+                        </li>
+                        <li>
+                            <a class="materials__item" href="#">
+                                <span class="materials__icon"></span>
+                                Название документа, прикрепленного к заданию.xlsx
+                            </a>
+                        </li>
+                        <li>
+                            <a class="materials__item" href="#">
+                                <span class="materials__icon"></span>
+                                Название материала к заданию.pdf
+                            </a>
+                        </li>
+                        <li>
+                            <a class="materials__item" href="#">
+                                <span class="materials__icon"></span>
+                                Название материала к заданию.png
+                            </a>
+                        </li>
+                        <li>
+                            <a class="materials__item" href="#">
+                                <span class="materials__icon"></span>
+                                Название документа, прикрепленного к заданию.mov
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="practice__chat chat">
+                    <div class="chat__heading">
                         Вопросы участников к ближайшей сессии “Вопрос-ответ”:
                     </div>
-                    <div class="questions__pool">
+                    <div class="chat__pool">
                         <article class="question-item">
                             <img class="question-item__avatar" src="../img/avatar.svg" alt="">
                             <div>
@@ -383,6 +424,19 @@
                                     </p>    
                                 </div>
                                 <div class="question-item__author">
+                                    UserName,    30 мая в 16:26
+                                </div>
+                            </div>
+                        </article>
+                        <article class="answer-item">
+                            <img class="answer-item__avatar" src="../img/avatar.svg" alt="">
+                            <div>
+                                <div class="answer-item__message">
+                                    <p>
+                                        Жи́зненный цикл организа́ции — совокупность стадий развития, которые проходит фирма за период своего существования. Эта теория, разработанная непревзойденным бизнес-консультантом мира Ицхак Кальдерон Адизесом, рассматривается в рамках менеджмента и подразумевает прохождение организацией нескольких этапов развития (аналогия с живыми существами
+                                    </p>
+                                </div>
+                                <div class="answer-item__author">
                                     UserName,    30 мая в 16:26
                                 </div>
                             </div>
@@ -401,16 +455,14 @@
                             </div>
                         </article>
                     </div>
-                    <div class="questions__input">
-                        <form class="questions__form">
-                            <textarea class="questions__textarea uk-textarea" placeholder="Введите текст" required></textarea>
-                            <button class="questions__attachment" type="button">
-                                <svg class="questions__attachment-icon">
-                                    <use xlink:href="img/sprite.svg#clip"/>
-                                </svg>
+                    <div class="chat__input">
+                        <form class="chat__form">
+                            <textarea class="chat__textarea uk-textarea" placeholder="Введите текст" required></textarea>
+                            <button class="chat__attachment" type="button">
+                                <img class="chat__attachment-icon" src="../img/clip.png" alt="">
                             </button>
-                            <button class="questions__send" type="submit">
-                                <svg class="questions__send-icon">
+                            <button class="chat__send" type="submit">
+                                <svg class="chat__send-icon">
                                     <use xlink:href="img/sprite.svg#send"/>
                                 </svg>
                             </button>

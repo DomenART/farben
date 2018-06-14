@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ABC Farben</title>
+    <link href="main.css" rel="stylesheet">
+</head>
+<body class="page">
+    <header class="main-header">
+        <div class="main-header__leftside">
+            <img class="main-header__logo" src="../img/logo.png" alt="">
+            <div class="main-header__title">
+                Электронная Академия<br>
+                ABC Farben
+            </div>
+        </div>
+        <div class="main-header__rightside">
+            <a class="main-header__programs" href="#">
+                « Список учебных программ
+            </a>
+            <a class="main-header__help" href="#">
+                <svg class="main-header__help-icon">
+                    <use xlink:href="img/sprite.svg#help">
+                </svg>
+            </a>
+            <button class="main-header__notification-btn notification-btn" type="button">
+                <svg class="notification-btn__icon">
+                    <use xlink:href="img/sprite.svg#bell" />
+                </svg>
+                <div class="notification-btn__counter"><span>348</span></div>
+            </button>
+            <a class="main-header__user" href="#">
+                UserName
+                <img class="main-header__user-avatar" src="../img/avatar.svg" alt="">
+            </a>
+        </div>
+    </header>
+    <main class="editing page">
+        <form class="uk-form">
+            <div class="editing__heading">
+                <div class="editing__heading-inner">
+                    <div class="editing__heading-leftside">
+                        <img class="editing__avatar" src="../img/avatar.svg" alt="">
+                        <div class="profile__name">Христофор Христорождественский</div>
+                    </div>
+                    <div class="editing__heading-rightside">
+                        <a class="editing__password" href="#">
+                            <svg class="editing__password-icon">
+                                <use xlink:href="img/sprite.svg#lock"/>
+                            </svg>
+                            Изменить пароль
+                        </a>
+                        <a class="editing__logout" href="#">
+                            <svg class="editing__logout-icon">
+                                <use xlink:href="img/sprite.svg#logout"/>
+                            </svg>
+                            Выход
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="editing__contacts">
+                <div class="profile-container">
+                    <div class="editing__contacts-row">
+                        <div class="editing__contacts-row-leftside">
+                            <img class="editing__contacts-icon" src="../img/map-pin.svg" alt="">
+                            <select class="editing__country uk-select" name="country">
+                                <option checked>Россия</option>
+                                <option>Украина</option>
+                                <option>Белорусия</option>
+                                <option>Казахстан</option>
+                            </select>
+                        </div>
+                        <div class="editing__contacts-row-rightside">
+                            <input class="editing__contacts-input uk-input" name="city" type="text" value="Воронеж">
+                        </div>
+                    </div>
+                    <div class="editing__contacts-row">
+                        <img class="profile__contacts-icon" src="../img/bust.svg" alt="">
+                        <input class="editing__contacts-input editing__contacts-input_name uk-input" name="firstname" type="text" value="Христофор">
+                        <input class="editing__contacts-input uk-input" name="surname" type="text" value="Христорождественский">
+                    </div>
+                    <br><br>
+                    <div class="editing__contacts-row">
+                        <img class="editing__contacts-icon" src="../img/mail.svg" alt="">
+                        <input class="editing__contacts-input editing__contats-input_communications uk-input" name="email" type="email" value="mail@mail.ru">
+                        <div class="editing__show">
+                            <input class="editing__show-checkbox" name="show-email" id="show-email" type="checkbox" checked>
+                            <label class="editing__show-label" for="show-email">
+                                <span class="editing__show-checkbox-custom"></span>
+                                Виден всем
+                            </label>
+                        </div>
+                    </div>
+                    <div class="editing__contacts-row">
+                        <img class="editing__contacts-icon" src="../img/phone.svg" alt="">
+                        <input class="editing__contacts-input editing__contacts-input_communications uk-input" name="tel" type="tel" value="+7 760 833 38 83">
+                        <div class="editing__show">
+                            <input class="editing__show-checkbox" name="show-tel" id="show-tel" type="checkbox">
+                            <label class="editing__show-label" for="show-tel">
+                                <span class="editing__show-checkbox-custom"></span>
+                                Виден всем
+                            </label>
+                        </div>
+                    </div>
+                    <div class="editing__contacts-row">
+                        <img class="editing__contacts-icon" src="../img/skype.svg" alt="">
+                        <input class="editing__contacts-input editing__contacts-input_communications uk-input" name="skype" type="tel" value="skypelogin">
+                        <div class="editing__show">
+                            <input class="editing__show-checkbox" name="show-skype" id="show-skype" type="checkbox">
+                            <label class="editing__show-label" for="show-skype">
+                                <span class="editing__show-checkbox-custom"></span>
+                                Виден всем
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="editing__company">
+                <div class="profile-container">
+                    <div class="editing__company-row">
+                        <img class="editing__company-icon" src="../img/house.svg" alt="">
+                        <div class="editing__company-info">
+                            <div class="editing__company-field">
+                                Компания
+                            </div>
+                            <input class="editing__company-input uk-input" type="text" value="ABC Farben">
+                        </div>
+                    </div>
+                    <div class="editing__company-row">
+                        <img class="editing__company-icon" src="../img/position.svg" alt="">
+                        <div class="editing__company-info">
+                            <div class="editing__company-field">
+                                Должность
+                            </div>
+                            <input class="editing__company-input uk-input" type="text" value="Учредитель">
+                        </div>
+                    </div>
+                    <div class="editing__company-row">
+                        <img class="editing__company-icon" src="../img/field.svg" alt="">
+                        <div class="editing__company-info">
+                            <div class="editing__company-field">
+                                Сфера деятельности
+                            </div>
+                            <input class="editing__company-input uk-input" type="text" value="ABC Farben">
+                        </div>
+                    </div>
+                    <div class="editing__company-row">
+                        <img class="editing__company-icon" src="../img/about.svg" alt="">
+                        <div class="editing__company-info">
+                            <div class="editing__company-field">
+                                О компании
+                            </div>
+                            <textarea class="editing__textarea uk-textarea">Производство декоративных лакокрасочных материалов и индустриальных полимерных ЛКМ </textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="editing__submit" type="submit">Сохранить изменения</button>
+        </form>
+    </main>
+    <script src="bundle.js"></script>
+</body>
+</html>

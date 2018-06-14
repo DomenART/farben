@@ -50,21 +50,19 @@
     <symbol id="refresh" viewBox="0 0 19 19">
         <path transform="translate(-1361 -219)" d="M1376.68 229.46l-2.31-2.46h1.35a5.52 5.52 0 0 0-5.16-3.8c-3.03 0-5.5 2.6-5.5 5.84 0 3.22 2.47 5.84 5.5 5.84a5.5 5.5 0 0 0 5.03-3.45l.02-.06 1.47 1.56-.02.06-.01.01a7.46 7.46 0 0 1-6.52 4c-4.16 0-7.53-3.58-7.53-8s3.37-8 7.53-8c3.48 0 6.4 2.5 7.27 5.9 0 .03 0 .07.02.1h1.18z"/>
     </symbol>
-    <symbol id="doc" viewBox="0 0 14 17">
+    <symbol id="doc" viewBox="0 0 17 17">
         <path fill="currentColor" transform="translate(-434 -495)" d="M436 498h1v12h-1zm1-1h9v1h-9zm10 13h-1v-12h1zm-1 1h-9v-1h9zm-8-10h1v1h-1zm2 0h5v1h-5zm-2 3h1v1h-1zm2 0h5v1h-5zm-2 3h1v1h-1zm2 0h5v1h-5z"/>
     </symbol>
     <symbol id="doc-done" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" viewBox="0 0 484 564">
         <path fill="currentColor" d="M0 36l36 0 0 432 -36 0 0 -432zm36 -36l324 0 0 36 -324 0 0 -36zm360 468l-36 0 0 -432 36 0 0 432zm-36 36l-324 0 0 -36 324 0 0 36zm-288 -360l36 0 0 36 -36 0 0 -36zm72 0l180 0 0 36 -180 0 0 -36zm-72 108l36 0 0 36 -36 0 0 -36zm72 0l180 0 0 36 -180 0 0 -36zm-72 108l36 0 0 36 -36 0 0 -36zm72 0l180 0 0 36 -180 0 0 -36z"/>
         <ellipse fill="#4FC881" cx="330" cy="409" rx="154" ry="156"/>
-        <g fill="#FEFEFE">
+        <g fill="#fefefe">
             <rect x="242" y="423" width="35.2563" height="35.29"/>
             <rect x="278" y="459" width="35.2563" height="35.29"/>
             <rect x="313" y="423" width="35.2563" height="35.29"/>
             <rect x="348" y="388" width="35.2563" height="35.29"/>
             <rect x="384" y="353" width="35.2563" height="35.29"/>
         </g>
-    </symbol>
-    <symbol id="clip" viewBox="0 0 21 20">
     </symbol>
     <symbol id="send" viewBox="0 0 21 16">
         <path transform="translate(-1474 -1048)" d="M1474 1058.6l7.25 2.3 8.92-7.91-6.92 8.52 7.75 2.5 4-16.01z"/>
