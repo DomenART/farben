@@ -13,6 +13,9 @@
 .main-aside__section {
     border-bottom: 1px solid #495362;
     padding: 26px 58px;
+    @media (max-width: @breakpoint-small) {
+        padding: 26px;
+    }
 }
 
 .main-aside__section-pic {
@@ -107,7 +110,7 @@
     height: 20px;
     position: absolute;
     top: 0;
-    right: 28px;
+    left: 180px;
     border: 0;
     background-color: transparent;
     cursor: pointer;
@@ -161,7 +164,7 @@
 .main-aside__substructure-icon-done {
     width: 17px;
     height: 17px;
-    margin-right: 7px;
+    margin-right: 5px;
     color: #cacaca;
 }
 

@@ -93,6 +93,59 @@
                 </svg>
                 <div class="notification-btn__counter"><span>348</span></div>
             </button>
+            <div class="notifications" uk-dropdown="mode: click; pos: right-top;">
+                <div class="notifications__inner">
+                    <div class="notification-item">
+                        <div class="notification-item__title">
+                            Программа, к которой относится уведомление
+                        </div>
+                        <div class="notification-item__info">
+                            <a class="notification-item__link" href="#">
+                                <span class="notification-item__calendar">
+                                    <svg class="notification-item__calendar-icon">
+                                        <use xlink:href="img/sprite.svg#calendar" />
+                                    </svg>
+                                </span>
+                                <span class="notification-item__text">
+                                    Дополнительное образование (психология бизнеса), тренинги, полиграф, консалтинг, исследования
+                                </span>
+                            </a>
+                            <button class="notification-item__remove-btn" type="button"></button>
+                        </div>
+                    </div>
+                    <div class="notification-item">
+                        <div class="notification-item__title">
+                            Программа, к которой относится уведомление
+                        </div>
+                        <div class="notification-item__info">
+                            <a class="notification-item__link" href="#">
+                                <span class="notification-item__calendar">
+                                    <svg class="notification-item__folder-icon">
+                                        <use xlink:href="img/sprite.svg#folder" />
+                                    </svg>
+                                </span>
+                                <span class="notification-item__text">
+                                    Открыт доступ к программе курса 
+                                </span>
+                            </a>
+                            <button class="notification-item__remove-btn" type="button"></button>
+                        </div>
+                        <div class="notification-item__info">
+                            <a class="notification-item__link" href="#">
+                                <span class="notification-item__calendar">
+                                    <svg class="notification-item__folder-icon">
+                                        <use xlink:href="img/sprite.svg#folder" />
+                                    </svg>
+                                </span>
+                                <span class="notification-item__text">
+                                    Открыт доступ к программе курса 
+                                </span>
+                            </a>
+                            <button class="notification-item__remove-btn" type="button"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <a class="main-header__user" href="#">
                 UserName
                 <img class="main-header__user-avatar" src="../img/avatar.svg" alt="">
@@ -303,13 +356,91 @@
                         </li>
                     </ul>
                 </div>
-                <div class="main-aside__section main-aside__structure_isLocked">
-                    <a href="#" class="main-aside__link">
-                        <svg class="main-aside__icon main-aside__icon_calendar">
+                <div class="main-aside__section">
+                    <button class="main-aside__link calendar-btn" type="button" uk-toggle="target: #calendar">
+                        <svg class="calendar-btn__icon">
                             <use xlink:href="img/sprite.svg#calendar"/>
                         </svg>
-                        <span class="main-aside__link-title">Календарь</span>
-                    </a>
+                        <span class="calendar-btn__title">Календарь</span>
+                    </button>
+                    <div class="calendar" id="calendar" hidden>
+                        <div class="calendar__control">
+                            <button class="calendar__control-prev" type="button"></button>
+                            <div class="calendar__control-month">Май</div>
+                            <button class="calendar__control-next" type="button"></button>
+                        </div>
+                        <table>
+                            <tr>
+                                <th>ПН</th>
+                                <th>ВТ</th>
+                                <th>СР</th>
+                                <th>ЧТ</th>
+                                <th>ПТ</th>
+                                <th>СБ</th>
+                                <th>ВС</th>
+                            </tr>
+                            <tr>
+                                <td class="calendar__outside-cell">30</td>
+                                <td>1</td>
+                                <td><button class="event-btn event-btn_haveEvent" uk-toggle="target: #event">2</button></td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>5</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>8</td>
+                                <td>9</td>
+                                <td><button class="event-btn event-btn_haveEvent">10</button></td>
+                                <td>1</td>
+                                <td>12</td>
+                                <td>13</td>
+                            </tr>
+                            <tr>
+                                <td>14</td>
+                                <td>15</td>
+                                <td>16</td>
+                                <td>17</td>
+                                <td>18</td>
+                                <td>19</td>
+                                <td>20</td>
+                            </tr>
+                            <tr>
+                                <td>21</td>
+                                <td>22</td>
+                                <td><button class="event-btn event-btn_haveEvent">23</button></td>
+                                <td>24</td>
+                                <td>25</td>
+                                <td>26</td>
+                                <td>27</td>
+                            </tr>
+                            <tr>
+                                <td>28</td>
+                                <td>29</td>
+                                <td>30</td>
+                                <td class="calendar__outside-cell">1</td>
+                                <td class="calendar__outside-cell">2</td>
+                                <td class="calendar__outside-cell">3</td>
+                                <td class="calendar__outside-cell">4</td>
+                            </tr>
+                        </table>
+                        <div id="event" uk-modal>
+                            <div class="event uk-modal-dialog uk-modal-body">
+                                <button class="close uk-modal-close" type="button" uk-close></button>
+                                <div class="event__heading">
+                                    <svg class="event__heading-icon">
+                                        <use xlink:href="img/sprite.svg#folder"/>
+                                    </svg>
+                                    <h3 class="event__heading-desc">Открытие модуля  17 июня в 09:00</h3>
+                                </div>
+                                <h3 class="event__title">V. Название модуля, может быть длинным</h3>
+                                <div class="event__text">
+                                    Небольшой текстовый блок, поясняющий подробнее, какое именно событие, что будет, кому подойдет и тд.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="main-aside__section">
                     <a href="#" class="main-aside__link">
@@ -330,45 +461,47 @@
             </aside>
         </div>
         <div class="uk-width-expand">
-            <main class="lesson main-area">
-                <ul class="breadcrumb uk-breadcrumb">
-                    <li><a href="#">ПРОГРАММА, КУРС</a></li>
-                    <li><a href="#">II.Модель системного бизнеса</a></li>
-                    <li><a href="#">Жизненные циклы компании</a></li>
-                    <li><span>Урок модуля</span></li>
-                </ul>
-                <h1 class="lesson__page-title page-title">
-                    <svg class="page-title__icon page-title__icon_lesson">
-                        <use xlink:href="img/sprite.svg#doc"/>
-                    </svg>
-                    Жизненные циклы компании (заголовок подраздела)
-                </h1>
-                <div class="content">
-                    <p>
-                        Жи́зненный цикл организа́ции — совокупность стадий развития, которые проходит фирма за период своего существования.
-                    </p>
-                    <p>
-                        Эта теория, разработанная непревзойденным бизнес-консультантом мира Ицхак Кальдерон Адизесом, рассматривается в рамках менеджмента и подразумевает прохождение организацией нескольких этапов развития (аналогия с живыми существами): становление, рост, зрелость, смерть. Но последний этап не совсем применим к организации, так как не всякое искусственное создание обязательно должно умереть.
-                    </p>
-                    <video controls="controls" poster="img/video-poster.jpg" paused>
-                        <source src="img/Big Buck Bunny.mp4" type="video/mp4">
-                        Ваш браузер не поддерживает тег видео.
-                    </video>
-                    <p> 
-                        Жизненный цикл имеет следующий вид: зарождение и становление, рост, когда фирма активно заполняет выбранный ею сегмент рынка, зрелость, когда фирма пытается сохранить имеющуюся долю рынка под своим контролем и старость, когда фирма быстро теряет свою долю рынка и вытесняется конкурентами. В дальнейшем организация либо ликвидируется, либо вливается в более крупную, либо разбивается на более мелкие организации, которые в зависимости от ситуации могут оказаться на стадиях роста или зрелости (реже — других стадиях).
-                    </p> 
-                </div>
-                <div class="training-nav">
-                    <div class="training-nav__leftside">
-                        <a class="nav-btn" href="#">« Предыдущий урок </a>
-                        <a class="link-btn" href="#">Перейти к заданию</a>
-                        <a class="nav-btn" href="#">Следующий урок »</a>
+            <div class="container">
+                <main class="lesson main-area">
+                    <ul class="lesson__breadcrumb breadcrumb uk-breadcrumb">
+                        <li><a href="#">ПРОГРАММА, КУРС</a></li>
+                        <li><a href="#">II.Модель системного бизнеса</a></li>
+                        <li><a href="#">Жизненные циклы компании</a></li>
+                        <li><span>Урок модуля</span></li>
+                    </ul>
+                    <h1 class="lesson__page-title page-title">
+                        <svg class="page-title__icon page-title__icon_lesson">
+                            <use xlink:href="img/sprite.svg#doc"/>
+                        </svg>
+                        Жизненные циклы компании (заголовок подраздела)
+                    </h1>
+                    <div class="content">
+                        <p>
+                            Жи́зненный цикл организа́ции — совокупность стадий развития, которые проходит фирма за период своего существования.
+                        </p>
+                        <p>
+                            Эта теория, разработанная непревзойденным бизнес-консультантом мира Ицхак Кальдерон Адизесом, рассматривается в рамках менеджмента и подразумевает прохождение организацией нескольких этапов развития (аналогия с живыми существами): становление, рост, зрелость, смерть. Но последний этап не совсем применим к организации, так как не всякое искусственное создание обязательно должно умереть.
+                        </p>
+                        <video controls="controls" poster="img/video-poster.jpg" paused>
+                            <source src="img/Big Buck Bunny.mp4" type="video/mp4">
+                            Ваш браузер не поддерживает тег видео.
+                        </video>
+                        <p> 
+                            Жизненный цикл имеет следующий вид: зарождение и становление, рост, когда фирма активно заполняет выбранный ею сегмент рынка, зрелость, когда фирма пытается сохранить имеющуюся долю рынка под своим контролем и старость, когда фирма быстро теряет свою долю рынка и вытесняется конкурентами. В дальнейшем организация либо ликвидируется, либо вливается в более крупную, либо разбивается на более мелкие организации, которые в зависимости от ситуации могут оказаться на стадиях роста или зрелости (реже — других стадиях).
+                        </p> 
                     </div>
-                    <div class="training-nav__rightside">
-                        <a class="function-btn" href="#">Следующий модуль</a>
+                    <div class="training-nav">
+                        <div class="training-nav__leftside">
+                            <a class="nav-btn" href="#">« Предыдущий урок </a>
+                            <a class="link-btn" href="#">Перейти к заданию</a>
+                            <a class="nav-btn" href="#">Следующий урок »</a>
+                        </div>
+                        <div class="training-nav__rightside">
+                            <a class="function-btn" href="#">Следующий модуль</a>
+                        </div>
                     </div>
-                </div>
-            </main>
+                </main>
+            </div>
         </div>
     </div>
     <script src="bundle.js"></script>

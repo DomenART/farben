@@ -10,50 +10,169 @@
 <body class="page">
     <header class="main-header">
         <div class="main-header__leftside">
-            <img class="main-header__logo" src="../img/logo.png" alt="">
-            <div class="main-header__title">
-                Электронная Академия<br>
-                ABC Farben
-            </div>
+            <a class="main-header__logo">
+                <img class="main-header__logo-img" src="../img/logo.png" alt="">
+                <div class="main-header__logo-title">
+                    Электронная Академия<br>
+                    ABC Farben
+                </div>
+            </a>
         </div>
         <div class="main-header__rightside">
-            <a class="main-header__programs" href="#">
-                « Список учебных программ
-            </a>
-            <a class="main-header__help" href="#">
-                <svg class="main-header__help-icon">
-                    <use xlink:href="img/sprite.svg#help">
-                </svg>
-            </a>
-            <button class="main-header__notification-btn notification-btn" type="button">
-                <svg class="notification-btn__icon">
-                    <use xlink:href="img/sprite.svg#bell" />
-                </svg>
-                <div class="notification-btn__counter"><span>348</span></div>
-            </button>
-            <a class="main-header__user" href="#">
-                UserName
-                <img class="main-header__user-avatar" src="../img/avatar.svg" alt="">
-            </a>
+            <div>
+                <a class="main-header__programs" href="#">
+                    « Список учебных программ
+                </a>
+                <button class="main-header__help" type="button" uk-toggle="target: #help">
+                    <svg class="main-header__help-icon">
+                        <use xlink:href="img/sprite.svg#help">
+                    </svg>
+                </button>
+                <div id="help" uk-modal>
+                    <div class="help uk-modal-dialog uk-modal-body">
+                        <button class="help__close uk-modal-close" type="button" uk-close></button>
+                        <ul class="help__nav" uk-switcher="connect: .help__content;">
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                        </ul>
+                        <ul class="uk-switcher help__content">
+                            <li>
+                                <div class="help__image-area">
+                                    <img class="help__image" src="../img/help-image.jpg" alt="">
+                                </div>
+                                <div class="help__desc-area">
+                                    <div class="help__desc-title">
+                                        Шаг 6 - Вопросы эксперту
+                                    </div>
+                                    <div class="help__desc-text">
+                                        Вы можете задать вопрос эксперту на открытой сессии “вопрос-ответ”
+                                        в соответствующем разделе.
+                                    </div>
+                                    <button class="help__desc-further" type="button">Дальше</button>
+                                    <button class="help__desc-end uk-modal-close" type="button">Мне всё понятно</button>
+                                </div>
+                            </li>
+                            <li> 
+                                <div class="help__image-area">
+                                    <img class="help__image" src="../img/help-image.jpg" alt="">
+                                </div>
+                                <div class="help__desc-area">
+                                    <div class="help__desc-title">
+                                        Шаг 3 - Помощь эксперту
+                                    </div>
+                                    <div class="help__desc-text">
+                                        Вы можете задать вопрос эксперту на открытой сессии “вопрос-ответ”
+                                        в соответствующем разделе.
+                                    </div>
+                                    <button class="help__desc-further" type="button">Дальше</button>
+                                    <button class="help__desc-end uk-modal-close" type="button">Мне всё понятно</button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="help__image-area">
+                                    <img class="help__image" src="../img/help-image.jpg" alt="">
+                                </div>
+                                <div class="help__desc-area">
+                                    <div class="help__desc-title">
+                                        Шаг 1 - Помощь мне
+                                    </div>
+                                    <div class="help__desc-text">
+                                        Вы можете задать вопрос эксперту на открытой сессии “вопрос-ответ”
+                                        в соответствующем разделе.
+                                    </div>
+                                    <button class="help__desc-further" type="button">Дальше</button>
+                                    <button class="help__desc-end uk-modal-close" type="button">Мне всё понятно</button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="main-header__notification-btn notification-btn" type="button">
+                    <svg class="notification-btn__icon">
+                        <use xlink:href="img/sprite.svg#bell" />
+                    </svg>
+                    <div class="notification-btn__counter"><span>348</span></div>
+                </button>
+                <div class="notifications" uk-dropdown="mode: click; pos: right-top;">
+                    <div class="notifications__inner">
+                        <div class="notification-item">
+                            <div class="notification-item__title">
+                                Программа, к которой относится уведомление
+                            </div>
+                            <div class="notification-item__info">
+                                <a class="notification-item__link" href="#">
+                                    <span class="notification-item__calendar">
+                                        <svg class="notification-item__calendar-icon">
+                                            <use xlink:href="img/sprite.svg#calendar" />
+                                        </svg>
+                                    </span>
+                                    <span class="notification-item__text">
+                                        Дополнительное образование (психология бизнеса), тренинги, полиграф, консалтинг, исследования
+                                    </span>
+                                </a>
+                                <button class="notification-item__remove-btn" type="button"></button>
+                            </div>
+                        </div>
+                        <div class="notification-item">
+                            <div class="notification-item__title">
+                                Программа, к которой относится уведомление
+                            </div>
+                            <div class="notification-item__info">
+                                <a class="notification-item__link" href="#">
+                                    <span class="notification-item__calendar">
+                                        <svg class="notification-item__folder-icon">
+                                            <use xlink:href="img/sprite.svg#folder" />
+                                        </svg>
+                                    </span>
+                                    <span class="notification-item__text">
+                                        Открыт доступ к программе курса 
+                                    </span>
+                                </a>
+                                <button class="notification-item__remove-btn" type="button"></button>
+                            </div>
+                            <div class="notification-item__info">
+                                <a class="notification-item__link" href="#">
+                                    <span class="notification-item__calendar">
+                                        <svg class="notification-item__folder-icon">
+                                            <use xlink:href="img/sprite.svg#folder" />
+                                        </svg>
+                                    </span>
+                                    <span class="notification-item__text">
+                                        Открыт доступ к программе курса 
+                                    </span>
+                                </a>
+                                <button class="notification-item__remove-btn" type="button"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <a class="main-header__user" href="#">
+                    UserName
+                    <img class="main-header__user-avatar" src="../img/avatar.svg" alt="">
+                </a>
+            </div>
         </div>
     </header>
     <main class="editing page">
         <form class="uk-form">
-            <div class="editing__heading">
-                <div class="editing__heading-inner">
-                    <div class="editing__heading-leftside">
-                        <img class="editing__avatar" src="../img/avatar.svg" alt="">
-                        <div class="profile__name">Христофор Христорождественский</div>
+            <div class="profile-info">
+                <div class="profile-info__inner">
+                    <div class="profile-info__leftside">
+                        <img class="profile-info__avatar" src="../img/avatar.svg" alt="">
+                        <div class="profile-info__name">Христофор Христорождественский</div>
                     </div>
-                    <div class="editing__heading-rightside">
-                        <a class="editing__password" href="#">
-                            <svg class="editing__password-icon">
+                    <div class="profile-info__rightside">
+                        <a class="profile-info__password" href="#">
+                            <svg class="profile-info__password-icon">
                                 <use xlink:href="img/sprite.svg#lock"/>
                             </svg>
                             Изменить пароль
                         </a>
-                        <a class="editing__logout" href="#">
-                            <svg class="editing__logout-icon">
+                        <a class="profile-info__logout" href="#">
+                            <svg class="profile-info__logout-icon">
                                 <use xlink:href="img/sprite.svg#logout"/>
                             </svg>
                             Выход
@@ -63,8 +182,8 @@
             </div>
             <div class="editing__contacts">
                 <div class="profile-container">
-                    <div class="editing__contacts-row">
-                        <div class="editing__contacts-row-leftside">
+                    <div class="editing__location-row">
+                        <div class="editing__location-row-leftside">
                             <img class="editing__contacts-icon" src="../img/map-pin.svg" alt="">
                             <select class="editing__country uk-select" name="country">
                                 <option checked>Россия</option>
@@ -73,19 +192,23 @@
                                 <option>Казахстан</option>
                             </select>
                         </div>
-                        <div class="editing__contacts-row-rightside">
-                            <input class="editing__contacts-input uk-input" name="city" type="text" value="Воронеж">
+                        <div class="editing__location-row-rightside">
+                            <input class="editing__location-input uk-input" name="city" type="text" value="Воронеж">
                         </div>
                     </div>
-                    <div class="editing__contacts-row">
-                        <img class="profile__contacts-icon" src="../img/bust.svg" alt="">
-                        <input class="editing__contacts-input editing__contacts-input_name uk-input" name="firstname" type="text" value="Христофор">
-                        <input class="editing__contacts-input uk-input" name="surname" type="text" value="Христорождественский">
+                    <div class="editing__name-row">
+                        <div class="editing__name-row-leftside">
+                            <img class="profile__contacts-icon" src="../img/bust.svg" alt="">
+                            <input class="editing__contacts-input editing__contacts-input_name uk-input" name="firstname" type="text" value="Христофор">
+                        </div>
+                        <div class="editing__name-row-rightside">
+                            <input class="editing__contacts-input uk-input" name="surname" type="text" value="Христорождественский">
+                        </div>
                     </div>
                     <br><br>
                     <div class="editing__contacts-row">
                         <img class="editing__contacts-icon" src="../img/mail.svg" alt="">
-                        <input class="editing__contacts-input editing__contats-input_communications uk-input" name="email" type="email" value="mail@mail.ru">
+                        <input class="editing__contacts-input uk-input" name="email" type="email" value="mail@mail.ru">
                         <div class="editing__show">
                             <input class="editing__show-checkbox" name="show-email" id="show-email" type="checkbox" checked>
                             <label class="editing__show-label" for="show-email">
