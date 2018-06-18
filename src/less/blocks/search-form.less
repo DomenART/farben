@@ -2,6 +2,10 @@
     width: 352px;
     min-width: 352px;
     position: relative;
+    @media (max-width: @breakpoint-small) {
+        width: 100%;
+        min-width: 0;
+    }
 }
 
 .search-form__input {

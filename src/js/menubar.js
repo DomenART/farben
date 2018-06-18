@@ -5,7 +5,7 @@
     if (menubar) {
 
         if (window.matchMedia("(max-width: 960px)").matches) {
-            menubar.setAttribute('uk-offcanvas', 'overlay: true');
+            menubar.setAttribute('uk-offcanvas', 'overlay: false');
         }
 
     }

@@ -3,17 +3,21 @@
 }
 
 .practice__heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin-bottom: 50px;
+    @media (max-width: @breakpoint-medium) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
 
 .practice__page-title {
     margin-bottom: 0;
-}
-
-.practice__heading {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @media (max-width: @breakpoint-medium) {
+        margin-bottom: 20px;
+    }
 }
 
 .practice__exercises {
@@ -38,4 +42,7 @@
 
 .practice__materials {
     margin-bottom: 105px;
+    @media (max-width: @breakpoint-small) {
+        margin-bottom: 40px;
+    }
 }

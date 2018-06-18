@@ -2,6 +2,9 @@
     &.uk-modal-dialog {
         width: 965px;
         padding: 0;
+        @media (max-width: @breakpoint-medium) {
+            width: 640px;
+        }
     }
 }
 
@@ -48,6 +51,12 @@
             border-radius: 50%;
         }
     }
+    @media (max-width: @breakpoint-medium) {
+        top: 330px;
+    }
+    @media (max-width: @breakpoint-medium) {
+        top: 230px;
+    }
 }
 
 .help__image-area {
@@ -57,6 +66,15 @@
     height: 500px;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.07);
     background-color: #fec053;
+    img {
+       max-height: 100%;
+    }
+    @media (max-width: @breakpoint-medium) {
+        height: 300px;
+    }
+    @media (max-width: @breakpoint-medium) {
+        height: 200px;
+    }
 }
 
 .help__desc-area {
@@ -64,6 +82,9 @@
     flex-direction: column;
     align-items: center;
     padding: 72px 0 50px;
+    @media (max-width: @breakpoint-small) {
+        padding: 55px 0 20px;
+    }
 }
 
 .help__desc-title {

@@ -2,6 +2,7 @@
     height: 100%;
     min-height: ~"calc(100vh - 120px)";
     background-color: #374353;
+    overflow-x: hidden;
 }
 
 .main-aside__structure-heading {
@@ -12,7 +13,7 @@
 
 .main-aside__section {
     border-bottom: 1px solid #495362;
-    padding: 26px 58px;
+    padding: 26px 54px;
     @media (max-width: @breakpoint-small) {
         padding: 26px;
     }
@@ -138,7 +139,7 @@
 }
 
 .main-aside__substructure {
-    display: flex;
+    display: inline-flex;
     align-items: top;
     &:hover {
         text-decoration: none;

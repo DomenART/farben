@@ -20,11 +20,18 @@
             color: #fff;
         }
     }
+    @media (max-width: @breakpoint-medium) {
+        flex-direction: column;
+        padding: 10px;
+    }
 }
 
 .headway__leftside {
     display: flex;  
     align-items: center;
+    @media (max-width: @breakpoint-medium) {
+        margin-bottom: 20px;
+    }
 }
 
 .headway__icon {

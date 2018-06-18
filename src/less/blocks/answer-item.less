@@ -3,6 +3,9 @@
     align-items: center;
     padding-left: 15%;
     margin-bottom: 57px;
+    @media (max-width: @breakpoint-small) {
+        padding-left: 0;
+    }
 }
 
 .answer-item__avatar {
@@ -40,6 +43,9 @@
         left: -3px;
         z-index: 1;
         transform: rotate(-135deg) translateY(-50%);
+    }
+    @media (max-width: @breakpoint-small) {
+        padding: 10px;
     }
 }
 

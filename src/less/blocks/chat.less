@@ -21,6 +21,9 @@
     overflow-y: scroll;
     padding: 40px 28px 35px;
     border-bottom: 2px solid #e5eaef;
+    @media (max-width: @breakpoint-medium) {
+        padding: 10px 20px 10px 10px;
+    }
 }
 
 .chat__form {
@@ -41,6 +44,9 @@
         border: 0;
         box-shadow: none;
     }
+    @media (max-width: @breakpoint-medium) {
+        padding: 10px 20px;
+    }
 }
 
 .chat__attachment {
@@ -57,6 +63,10 @@
     background-color: transparent;
     transform: translateY(-50%);
     cursor: pointer;
+    @media (max-width: @breakpoint-medium) {
+        top: 130px;
+        transform: none;
+    }
 }
 
 .chat__attachment-icon {
@@ -78,6 +88,10 @@
     border: 0;
     border-radius: 50%;
     cursor: pointer;
+    @media (max-width: @breakpoint-medium) {
+        top: 120px;
+        transform: none;
+    }
 }
 
 .chat__send-icon {
